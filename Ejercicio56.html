@@ -1,0 +1,33 @@
+<!--
+Sobreescribe declaraciones de clase dando estilo a atributos ID
+
+Dale al elemento h1 el atributo id de orange-text. Recuerda, los estilos id se ven así:
+
+<h1 id="orange-text">
+Deja las clases blue-text y pink-text en tu elemento h1.
+
+Crea una declaración CSS para el id orange-text en el elemento style. Aquí hay un ejemplo de cómo se debería ver:
+
+#brown-text {
+  color: brown;
+}
+Nota: No importa si declaras este CSS arriba o debajo de la clase pink-text, ya que el atributo id siempre tendrá precedencia.
+-->
+
+<style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    .pink-text {
+      color: pink;
+    }
+    .blue-text {
+      color: blue;
+    }
+    #orange-text {
+      color: orange;
+    }
+  </style>
+  <h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
