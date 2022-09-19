@@ -36,3 +36,15 @@ p {
 footer{
     text-align: center;
 }
+
+a{
+    color: blueviolet;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active{
+    color: yellow;
+}
