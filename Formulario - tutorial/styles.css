@@ -103,4 +103,12 @@ textarea{
     box-shadow: 0 0 5px rgba(44, 115, 174, 0.963);
 }
 
+.input-check{
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 0.7rem;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
+}
 
