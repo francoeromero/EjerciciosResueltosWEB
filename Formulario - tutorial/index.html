@@ -14,10 +14,78 @@
     </header>
     <main>
         <form action="" id="survey-form">
-            <label for="name">Name</label><br>
-            <input type="text" id="name" required><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" required><br>
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+            <label for="" id="number-label">Age</label><br>
+            <input type="number" id="age" name="age" min="10" max="99" placeholder="Age" required><br>
+
+            <p>Which option best describes your current role?</p>
+            <select name="dropdown" id="dropdown" required>
+                <option disabled selected value>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Job">Full time Job</option>
+                <option value="Learner">Full time Learner</option>
+                <option value="PreferNo">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+
+
+
+
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+
+            <label for="definitely">
+                <input type="radio" name="indoor-outdoor" value="definitely" name="definitely" class="input-radio">
+                Definitely
+            </label><br>
+
+            <label for="maybe">
+                <input type="radio" name="indoor-outdoor"  value="maybe" id="maybe" class="input-radio">
+                Maybe
+            </label><br>
+
+            <label for="notsure">
+                <input type="radio" name="indoor-outdoor" value="notsure" id="notsure" class="input-radio">
+                Not sure
+            </label><br>
+
+
+
+
+
+
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select name="opcion" id="opcion">
+                <option disabled selected value>Select current role</option>
+                <option value="challenges">challenges</option>
+                <option value="projects">projects</option>
+                <option value="community">community</option>
+                <option value="opensource">opensource</option>
+            </select><br>
+
+
+
+
+            <p>What would you like to see improved? <small>(Check all that apply)</small></p>
+
+            <label for="Front-end">
+            <input type="checkbox" id="Front-end">Front-end Projects
+            </label> <br>
+
+            <label for="Back-end">
+            <input type="checkbox" id="Back-end">Back-end Projects 
+            </label><br>
+
+            <label for="Data">
+                <input type="checkbox" id="Data">
+                Data visualization
+            </label> <br>
+
+
+
             <input type="submit" value="submit">
         </form>
     </main>
