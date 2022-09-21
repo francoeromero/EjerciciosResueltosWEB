@@ -30,6 +30,10 @@ main{
 
 #description{
     text-align: center;
+    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.8);
+    font-weight: 1;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.7rem;
 }
 
 #survey-form{
@@ -41,7 +45,8 @@ main{
 textarea{
     resize: none;
     width: 100%;
-    height: 1%;  
+    height: 1%; 
+    font-size: 1.2rem; 
 }
 
 .form__input{
@@ -112,3 +117,18 @@ textarea{
     min-width: 1.2rem;
 }
 
+textarea:focus{
+    outline: 2px solid rgba(44, 115, 174, 0.963);
+    box-shadow: 0 0 5px rgba(44, 115, 174, 0.963);
+}
+
+.submit{
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #37af65;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #37af65;
+    font-size: 1.2rem;
+}
