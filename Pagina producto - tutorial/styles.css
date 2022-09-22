@@ -13,11 +13,13 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    height: 50px;
+    min-height: 60px;
 }
 
 .title {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 .input-email{
@@ -44,6 +46,7 @@ header{
     height: 30px;
     font-weight: 900;
     min-width: 120px;
+    margin-bottom: 70px;
 }
 
 .logo{
@@ -76,13 +79,14 @@ nav a {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 #features{
     display: flex;
     flex-direction: row;
     width: 900px;
-    height: 200px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -91,3 +95,20 @@ nav a {
 .title-features{
     margin-bottom: -10px;
 }
+
+.title-work{
+    text-align: center;
+    margin-top: 100px;
+}
+
+section{
+    scroll-margin-top: 150px; 
+    scroll-behavior: smooth;
+}
+
+.video-work{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
