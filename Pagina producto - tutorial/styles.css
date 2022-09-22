@@ -12,6 +12,38 @@ header{
     padding: 10px;
     position: fixed;
     width: 100%;
+    top: 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.input-email{
+    width: 20%;
+    height: 30px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.input-email:focus{
+    outline: 1px solid black;
+    border: 1px solid black;
+    box-shadow: 0 0 5px blue;
+}
+
+.input-submit{
+    width: 10%;
+    background-color: orange;
+    border: 1px solid orange;
+    height: 30px;
+    font-weight: 900;
+    min-width: 120px;
 }
 
 .logo{
@@ -27,4 +59,37 @@ nav a {
     font-weight: 600;
     text-decoration: none;
     padding-right: 60px;
+}
+
+
+/*features*/
+
+.icon{
+    display: flex;
+    justify-content: start;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.description-features{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#features{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+}
+
+.title-features{
+    margin-bottom: 1px;
 }
