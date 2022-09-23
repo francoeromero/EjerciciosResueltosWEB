@@ -7,7 +7,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     padding: 10px;
     position: fixed;
@@ -185,3 +185,32 @@ section{
     font-weight: 600;
     
 }
+
+/*footer*/
+
+.footer{
+    display: flex;
+    background-color: rgb(214, 214, 214);
+    width: 1000px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.items-footer a{
+    text-decoration: none;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
