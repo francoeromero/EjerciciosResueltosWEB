@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+#rotulo-vertical{
+    background-color: rgb(226, 226, 226);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-right: 3px solid rgb(82, 82, 82);
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+}
+
+.box{
+    height: 40px;
+    width: 250px;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(59, 59, 59);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    text-align: center;
+}
+
+.box-intro{
+    height: 40px;
+    width: 250px;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(59, 59, 59);
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgb(59, 59, 59);
+    text-align: center;
+}
+
+#box-title{
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+}
