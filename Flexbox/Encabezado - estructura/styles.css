@@ -1,0 +1,55 @@
+body{
+    background-color: beige;
+}
+
+.caja{
+    border: 1px solid rgb(164, 164, 164);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px; /* centra verticalmente*/
+    margin: 10px;
+    /*float: left;  los enfila a todas las cajas*/
+    text-align: center ;
+}
+
+.flex-container { /* usar flexbox para el contenedor NO el contenido*/
+    display: flex;
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap; /* se adapta al tamaño del viewport del navegador*/
+    /*flex-flow: row wrap; /* es la combinacion de flexdirection y flexwrap*/
+    justify-content: space-between;
+    align-items: center;
+    width: ;
+}
+
+.caja-izq{
+    border: 1px solid rgb(164, 164, 164);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px; /* centra verticalmente*/
+    margin: 10px;
+    /*float: left;  los enfila a todas las cajas*/
+    text-align: center ;
+}
+
+.cajas{
+    display: flex;
+    background: rgb(104, 104, 104);
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap; /* se adapta al tamaño del viewport del navegador*/
+    /*flex-flow: row wrap; /* es la combinacion de flexdirection y flexwrap*/
+    justify-content: space-between;
+    align-items: center;
+}
