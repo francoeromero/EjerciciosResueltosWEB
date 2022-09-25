@@ -9,11 +9,12 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     width: 30%;
-    height: 150px;
-    line-height: 120px; /* centra verticalmente*/
-    margin: 3px;
+    /*line-height: 120px; /* centra verticalmente*/
+    margin: 15px;
     /*float: left;  los enfila a todas las cajas*/
     text-align: center ;
+    overflow: hidden;
+    height: 100%;
 }
 
 .contenido2{
@@ -23,25 +24,25 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     width: 70%;
-    height: 150px;
-    line-height: 120px; /* centra verticalmente*/
-    margin: 4px;
+    /*line-height: 120px; /* centra verticalmente*/
+    margin: 15px;
     /*float: left;  los enfila a todas las cajas*/
     text-align: center ;
+    overflow: hidden;
+    height: 100%;
 }
 
 .contenedor{
     display: flex;
     border: 1px solid black;
     background: #ccc;
-    padding: 20px;
     flex-direction: row;
     flex-wrap: nowrap; /* se adapta al tamaño del viewport del navegador*/
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 1000px;
-    padding: 0;
-    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
 }
