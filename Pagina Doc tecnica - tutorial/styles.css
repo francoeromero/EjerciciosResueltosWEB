@@ -116,7 +116,15 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    text-align: center;
 }
+
+.box{
+    background-color: gray;
+    display: flex;
+    text-align: right;
+}
+
 .box{
     list-style: none;
     background-color: rgb(125, 125, 125);
@@ -126,9 +134,9 @@ article{
     border-right: none;
     width: 100%;
     text-align: center;
-    margin-left: 0;
-    margin-right: 10px;
+    
 }
+
 .box-intro{
     list-style: none;
     border: 1px solid black;
@@ -141,6 +149,15 @@ a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul{
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: blue;
 }
 
 #main{
