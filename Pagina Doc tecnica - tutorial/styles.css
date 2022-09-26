@@ -117,19 +117,28 @@ article{
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+
+    border: 1px solid black;
+    border-top: none;
 }
 
 
 
 .box{
     list-style: none;
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(211, 211, 211);
     border: 1px solid black;
     border-top: none;
     border-left: none;
     border-right: none;
     width: 100%;
     text-align: center;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -18px;
 }
 
 .box-intro{
