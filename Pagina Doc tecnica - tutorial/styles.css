@@ -44,6 +44,8 @@ body{
 .title{
     margin: 50px;
 }
+
+/*personalizamos los anclajes de la barra lateral*/
 a{
     text-decoration: none;
     color: black;
