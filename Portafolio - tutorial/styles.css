@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#navbar{
+    display: flex; /* usamos flexbox*/
+    justify-content: flex-end; /*para mandarlo ala izquierda*/
+    position: fixed; /*para que sea fijo*/
+    width: 100%; /*todo el ancho*/
+    height: 80px; /*alto del encabezado*/
+    background-color: gray; /*color*/
+    top: 0; /* que se pegue arriba del viewport*/
+}
+
+.nav-list {
+   display: flex; /*aplicamos flexbox*/
+   margin-right: 1rem; /*espacio del margen derecho*/
+   list-style: none; /*sacar la bolita*/
+   height: 80px;/* la misma altura del header*/
+   margin: 0; /*margen cero para que quede al filo*/
+}
+
+
+li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li:hover{
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.link{
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
