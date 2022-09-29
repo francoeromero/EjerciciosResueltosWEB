@@ -85,11 +85,11 @@ a:hover{
     border-left: none;
     border-right: none;
 }
-
+/* las secciones del contenido principal*/
 .main-section{
     margin: 20px;
 }
-
+/*el codigo de los ejemplos del contenido principal*/
 .diagram {
     background-color: rgb(192, 192, 192);
     width: 100%;
