@@ -4,7 +4,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
 }
-
+/*el contenedor del main*/
 #contenedor{
     display: flex;
     border: 1px solid black;
@@ -16,7 +16,7 @@ body{
     height: 4900px;
     
 }
-
+/* ahora la barra lateral que va a ser fija por eso estaria fuera del contenedor padre*/
 #navbar{
     border: 1px solid black;
     background-color: rgb(211, 211, 211);
@@ -30,7 +30,7 @@ body{
     flex-direction: column;
     position: fixed; 
 }
-
+/* contenido principal */
 #main-doc{
     border: 1px solid black;
     background-color: rgb(211, 211, 211);
@@ -40,7 +40,7 @@ body{
     height: 100%;
     text-align: left;
 }
-
+/*titulo de la barra lateral*/
 .title{
     margin: 50px;
 }
