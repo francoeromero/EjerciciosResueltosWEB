@@ -2,11 +2,21 @@ body{
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*titulo*/
+.title{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(71, 89, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*contenedor*/
 .grid-layout{
     width: auto;
     margin: 0 auto;
-    border: 1px solid black;
     background-color: rgb(71, 89, 167);
     padding: 20px;
     /*GRID*/
@@ -27,11 +37,11 @@ body{
     font-size: 3rem;
     line-height: 90px;
 }
-
+/*cajas rectangular*/
 .caja-item{
     margin-top: -15px; /*margen de arriba para que se pegue al de arriba*/
 }
-
+/*texto de las cajas items con su link*/
 #link{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -40,13 +50,26 @@ body{
 #link:hover{
     color: brown;
 }
-/* titulo */
+/* titulo previo*/
 
 h2{
     text-align: center;
     font-size: 4rem;
 }
 /*ahora el boton*/
+/*contenedor*/
+.caja-boton{
+    margin-top: 50px;
+    border: 4px solid black;
+    background-color: rgb(49, 59, 96);
+    text-align: center;
+    line-height: 150px;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 90px;
+    grid-column: 1 / 4;
+    justify-content: center;
+}
 .boton{
     display: flex;
     justify-content: center;
@@ -55,14 +78,18 @@ h2{
     width: 200px;
     margin: 50px;
     background-color: rgb(44, 44, 42);
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.boton:hover{
+    background-color: brown;
+}
+
+/*anclaje del link del boton*/
 #show{
     font-size: 2rem;
     text-decoration: none;
     color: white;
     
-}
-
-.boton:hover{
-    background-color: brown;
 }
