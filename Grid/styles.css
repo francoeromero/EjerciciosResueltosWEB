@@ -4,16 +4,17 @@ body{
 }
 
 .grid-layout{
-    width: 50%;
+    width: auto;
     margin: 0 auto;
     border: 1px solid black;
     background-color: lightgreen;
     padding: 20px;
     /*GRID*/
     display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto ;
-    justify-content: flex-end;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto 90px auto 90px;
+    justify-content: center;
+    grid-gap: 10px 15px ;
 }
 
 .caja{
@@ -23,5 +24,20 @@ body{
     
     text-align: center;
     line-height: 150px;
-    
+    text-align: center;
+    font-size: 3rem;
+    line-height: 90px;
+}
+
+.caja-item{
+    margin-top: -15px; /*margen de arriba para que se pegue al de arriba*/
+}
+
+#link{
+    text-decoration: none;
+    color: black;
+}
+
+#link:hover{
+    color: brown;
 }
