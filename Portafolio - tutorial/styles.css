@@ -90,7 +90,7 @@ img{
     grid-gap: 50px 10px;
     justify-items: center;
     align-items: flex-start;
-    
+    justify-content: center; /* tambien podemos centrarlo como flexbox*/
 }
 
 .project-tile{

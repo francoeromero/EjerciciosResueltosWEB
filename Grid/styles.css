@@ -11,14 +11,16 @@ body{
     padding: 20px;
     /*GRID*/
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+    justify-content: flex-end;
 }
 
 .caja{
     
     border: 4px solid black;
     background-color: lightgray;
-    margin: 0;
+    
     text-align: center;
     line-height: 150px;
     
