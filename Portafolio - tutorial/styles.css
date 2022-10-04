@@ -78,3 +78,40 @@ img{
     text-shadow: 0px 5px 5px black;
 }
 
+#projects{
+    background-color: rgb(82, 82, 107);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    grid-gap: 10px 15px;
+}
+
+.caja-item{
+    background-color: gray;
+    height: 40px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    margin-top: -15px;
+}
+
+#link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#link:hover{
+    color: brown;
+}
+
+.title{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(82, 82, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
