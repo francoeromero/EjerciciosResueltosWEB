@@ -154,7 +154,7 @@ img{
     color: white;
     font-size: 4rem;
     margin-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 200px; 
 }
 
 .subtitle-section{
@@ -177,6 +177,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 150px;
 }
 
 #profile-link{
