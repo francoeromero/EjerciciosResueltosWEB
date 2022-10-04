@@ -187,3 +187,15 @@ img{
     font-size: 1.4rem;
     margin-bottom: 100px;
 }
+
+hr{
+    border: 4px solid brown;
+    margin: 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: gray;
+}
