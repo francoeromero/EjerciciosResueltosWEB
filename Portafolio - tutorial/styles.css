@@ -77,7 +77,7 @@ img{
     color: brown;
     text-shadow: 0px 5px 5px black;
 }
-
+/*contenedor del grid*/
 #projects{
     background-color: rgb(82, 82, 107);
     display: grid;
@@ -86,7 +86,7 @@ img{
     justify-content: center;
     grid-gap: 10px 15px;
 }
-
+/*cajas link de los trabajos*/
 .caja-item{
     background-color: gray;
     height: 40px;
