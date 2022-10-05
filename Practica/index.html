@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <!--aplicamos jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+           if($(window).scrollTop()){
+            $('nav').addClass('black');
+           } 
+           else
+           {
+            $('nav').removeClass('black')
+           }
+        })
+    </script>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="https://s3-symbol-logo.tradingview.com/apple--600.png" alt="logo" width="100px">
+            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c516.png" alt="logo" width="90px">
         </div>
     
 
@@ -38,8 +51,16 @@
     </nav>
 
     <section class="sec1"></section>
-    <section class="sec2"></section>
-    <section class="sec3"></section>
+    <section class="content">
+        <h1>Apple</h1>
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt dolorum officiis consequuntur enim tempora, deserunt sequi natus dolorem quisquam neque rerum nobis totam quis! Repellat debitis minus sed maiores fugiat.</p>
+    </section>
+    <section class="sec3">
+        <h1>Apple</h1>
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt dolorum officiis consequuntur enim tempora, deserunt sequi natus dolorem quisquam neque rerum nobis totam quis! Repellat debitis minus sed maiores fugiat.</p>
+    </section>
     <section class="sec4"></section>
     <section class="sec5"></section>
 </body>

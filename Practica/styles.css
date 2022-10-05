@@ -13,7 +13,11 @@ nav{
     box-sizing: border-box;/**/
     transition: 0.5s;/**/
 }
-
+/*Jquery*/
+nav.black{
+    background: rgba(0,0,0,.3);
+}
+/*Jquery*/
 nav .logo{
     float: left;
 }
@@ -46,11 +50,11 @@ nav ul li a {
 
 nav ul li a.active{
     color: #fff;
-    background: #f00;
+    background: rgb(10, 34, 105);
 }
 nav ul li a:hover{
     color: #fff;
-    background: #f00;
+    background: rgb(10, 34, 105);
 }
 
 section.sec1{
@@ -58,4 +62,25 @@ section.sec1{
     height: 100vh;
     background: url(https://img.besthqwallpapers.com/Uploads/20-10-2019/108709/apple-blue-3d-logo-minimal-blue-background-apple-logo-creative.jpg);
     background-size: cover;
+}
+
+
+/*aca termina el encabezado ahora empieza el main*/
+
+
+
+section.content{
+    padding: 100px;
+}
+
+section.content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+}
+
+section.content p{
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 1.2em;
 }
