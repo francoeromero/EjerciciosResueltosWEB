@@ -22,6 +22,8 @@ header{
 #subtitle{
     text-align: center;
 }
+
+/*el encabezado fijo*/
 nav{
     position: fixed; 
     top: 0;
@@ -97,8 +99,21 @@ section.sec1{
 
 /*aca termina el encabezado ahora empieza el main*/
 
+/*imagen*/
 
-
+#img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    background: rgb(255, 255, 255);
+}
+#img-caption{
+    margin-bottom: 20px;
+}
+/*imagen*/
 section.content{
     padding: 100px;
 }
