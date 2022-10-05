@@ -3,6 +3,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(216, 216, 216);
     color: rgb(50, 50, 50);
+    margin: 0;
 } 
 
 #image {
@@ -47,3 +48,4 @@ a:hover {
 a:active{
     color: yellow;
 }
+
