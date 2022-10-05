@@ -2,6 +2,25 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: url(https://img.besthqwallpapers.com/Uploads/20-10-2019/108709/apple-blue-3d-logo-minimal-blue-background-apple-logo-creative.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*titulo y subtitulo*/
+header{
+    margin-top: 100px;
+}
+#title{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+}
+#subtitle{
+    text-align: center;
 }
 nav{
     position: fixed; 
@@ -13,18 +32,27 @@ nav{
     box-sizing: border-box;/**/
     transition: 0.5s;/**/
 }
-/*Jquery*/
+/*Jquery fondo oscuro del encabezado*/
 nav.black{
     background: rgba(0,0,0,.3);
 }
 /*Jquery*/
 nav .logo{
     float: left;
+    margin-top: 0px;
+}
+
+nav .logo:hover{
+    float: left;
+    margin-top: 0px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 nav .logo img{
     height: 80px;
     transition: 0.5s;
+    
 }
 nav ul {
     float: right;
@@ -60,8 +88,10 @@ nav ul li a:hover{
 section.sec1{
     width: 100%;
     height: 100vh;
-    background: url(https://img.besthqwallpapers.com/Uploads/20-10-2019/108709/apple-blue-3d-logo-minimal-blue-background-apple-logo-creative.jpg);
+    /*background: url(https://img.besthqwallpapers.com/Uploads/20-10-2019/108709/apple-blue-3d-logo-minimal-blue-background-apple-logo-creative.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
 }
 
 
