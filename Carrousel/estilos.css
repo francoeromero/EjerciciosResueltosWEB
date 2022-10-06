@@ -13,15 +13,15 @@ body {
 .titulo {
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: #fff;
 }
 
 .subtitulo {
     margin: 0;
-    color: rgb(255, 255, 255);
+    color: #000;
     display: inline;
-    font-size: 15px;
+    font-size: 50px;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -29,7 +29,7 @@ body {
 .sabor { 
     color: #fff;
     margin: 7px 0;
-    font-size: 10px;
+    font-size: 50px;
     font-weight: 600;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
     font-family: 'Dancing Script', cursive;
@@ -42,30 +42,15 @@ body {
     background-color: #36221c;
 }
 
-.carousel{
-    min-height: 500px;
-}
 
-.carousel .carousel-item{
+.carousel .carousel-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    user-select: none;
-   
-    
+    user-select: none;/*para que el texto no se seleccione con el mouse*/
+    background: rgb(50, 46, 46);
+    width: 1000px;
+    height: 1000px;
 }
 
-.carousel .carousel-item img{
-    
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 15px;
-}
-
-.container{
-    scale: 2;
-}
