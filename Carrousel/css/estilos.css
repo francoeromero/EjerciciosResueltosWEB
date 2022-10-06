@@ -86,7 +86,7 @@ nav{
     box-sizing: border-box;
     transition: 0.5s;
 }
-
+/* logo de la manzana*/
 nav .logo{
     
     scale: 0.5;
@@ -104,6 +104,15 @@ nav .logo:hover{
     scale: 0.6;
 }
 
+
+/*links del encabezado*/
+
+nav ul li a:hover{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    
+}
 
 /*
 
