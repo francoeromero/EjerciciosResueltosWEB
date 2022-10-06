@@ -6,7 +6,7 @@
 
 body { 
     min-height: 100vh;
-    background-image: linear-gradient(35deg, #e3e3e3, #383543);
+    background-image: linear-gradient(180deg, #a69b9b, #181818);
     background-attachment: fixed;
     font-family: 'Raleway', sans-serif;
 }
@@ -95,8 +95,15 @@ nav .logo{
     justify-content: center;
     align-items: flex-end;
     margin: -8px;
-    
+    transition: 0.5s;
 }
+
+nav .logo:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+    scale: 0.6;
+}
+
 
 /*
 
