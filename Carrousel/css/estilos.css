@@ -80,7 +80,7 @@ body {
 .imagen h5{
     
     color: white;
-    z-index: 200;
+    z-index: 1;
     font-size: 50px;
     position: absolute;
     text-align: center;
@@ -88,8 +88,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-shadow: 1px 1px 1px black;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
+
 
 .imagen{
     width: 100%;
@@ -113,7 +114,7 @@ body {
     height: 500px;
     border-radius: 10px;
     box-shadow: 0px 20px 40px 60px rgba(66, 66, 66, 0.4);
-    transition: 2s;
+    transition: 1s;
     cursor: pointer;
 }
 #image:hover{
@@ -215,7 +216,7 @@ h3{
 }
 /*el año de cada uno*/
 .rank{
-    position: ;
+    position: absolute;
     left: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2rem;
@@ -263,7 +264,7 @@ footer{
     text-align: center;
 }
 
-/*responsivo */
+/*responsivo movil */
 @media (max-width: 600px){
     /*imagen principal*/
     #image{
