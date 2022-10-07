@@ -127,7 +127,11 @@ body {
     height: 500px;
     border-radius: 10px;
     box-shadow: 0px 20px 40px 60px rgba(66, 66, 66, 0.4);
-    
+    transition: 2s;
+    cursor: pointer;
+}
+#image:hover{
+    scale: 1.2;
 }
 /*encabezado*/
 
