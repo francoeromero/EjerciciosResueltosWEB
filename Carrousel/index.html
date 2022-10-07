@@ -24,7 +24,7 @@
 
         <ul>
             <li>
-                <a href="#" class="active">Home</a>
+                <a  href="#" class="active">Home</a>
             </li>
             <li>
                 <a href="#">Photos</a>
@@ -42,14 +42,23 @@
         </ul>
     </nav>
     <!--Titulo y subtitulos-->
-        <h1 class="center-align titulo">Steve Jobs</h1>
-        <p class="subtitulo">Co-founder and CEO of Apple</p>
+        <h1 id="title">Steve Jobs</h1>
+        <p id="subtitle">Co-founder and CEO of Apple</p>
 <!--Materialize imagenes -->
-    <div class="container">
+<figure id="img-div">
+    <figcaption id="img-caption">
+        
+        <p>Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American entrepreneur, industrial designer, business magnate, media proprietor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT. He is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.</p> 
+    </figcaption>
+    <div class="imagen">
+        <h5>1955-2011</h5>
+    <img id="image" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2016/02/153345-anecdotas-curiosidades-steve-jobs.jpg?itok=w0k6w4FV" alt="">
+    </div>
+
+    <div id="container">
         <div class="row">
             <div class="col s12">
                 
-
                 <div class="carousel center-align">
 
                     <div class="carousel-item">
@@ -81,11 +90,11 @@
                         
                         <img src="/images/img6.jpg" alt="">
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+</figure>
     <!--main-->
     <main id="main">
     <div id="tribute-info">
@@ -202,9 +211,9 @@
          
     </div>
 </main>
-
+<hr>
 <footer>
-    <h3>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Norman_Borlaug" id="tribute-link" target="_blank"> Wikipedia entry</a>.</h3>
+    <h3 class="text-footer">If you want to know more about Steve Jobs, plese visit his Wikipedia page <a  id="tribute-link" href="https://en.wikipedia.org/wiki/Steve_Jobs" id="tribute-link" target="_blank"> Wikipedia entry</a>.</h3>
 </footer>
     
     <!--Materialize-->
