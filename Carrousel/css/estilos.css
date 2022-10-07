@@ -113,6 +113,13 @@ nav ul li a:hover{
     height: 100%;
     
 }
+
+/*main, el contenedor de la trayectoria*/
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 /*trayectoria*/
 #tribute-info{
     width: 50%;
@@ -124,13 +131,69 @@ nav ul li a:hover{
     border-right: 1px solid rgba(255,255,255,0.2);
     border-bottom: 1px solid rgba(255,255,255,0.2);
     backdrop-filter: blur(25px);
+    
 }
 
+/*titulo de trayectoria*/
 h3{
     color: #fff;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
 }
+
+/*las listas cada una*/
+.list{
+    position: relative;
+    display: flex;
+    padding: 10px 0;
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 20px 20px;
+    cursor: pointer;/*para que el cursos cambie cuando se seleccione*/
+    transition: 0.5s;
+    flex-direction: column;
+    overflow: hidden;/*para que los elementos contenidos esten dentro*/
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -30px;
+    
+}
+.list:hover{
+    background: rgba(161, 161, 161, 0.9);
+    box-shadow: -15px 30px 50px rgba(0,0,0,0.5);
+    transform: scale(1.5) ; /*translateX() translateY()*/
+}
+/*el año de cada uno*/
+.rank{
+    position: absolute;
+    left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 2px  black;
+    transition: 0.5s;
+}
+
+/* el texto descriptivo de cada año*/
+
+.list p{
+   text-align: left;
+   margin: 10px;
+   width: 500px;
+   
+}
+
+.list-end p{
+    text-align: center;
+    width: 100%;
+}
+
+.content-list  {
+    margin-top: 50px;
+}
+
 /*
 
 nav{
