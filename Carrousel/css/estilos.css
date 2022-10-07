@@ -39,15 +39,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.sabor { 
-    color: #fff;
-    margin: 7px 0;
-    font-size: 10px;
-    font-weight: 600;
-    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
-    font-family: 'Dancing Script', cursive;
-    margin-top: 0;
-}
+
 
 .linea-division {
     width: 80%;
@@ -77,6 +69,8 @@ body {
     left: 0;
     z-index: -1;
     border-radius: 15px;
+    width: 200px;
+    height: 200px;
 }
 
 #img-div{
@@ -274,3 +268,4 @@ footer{
     font-size: 20px;
     text-align: center;
 }
+
