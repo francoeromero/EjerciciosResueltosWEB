@@ -162,8 +162,8 @@ nav ul li a:hover{
     
 }
 
-/*main, el contenedor de la trayectoria*/
-#main{
+/*main second, el contenedor de la trayectoria*/
+#main-second{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -265,7 +265,7 @@ footer{
 }
 
 /*responsivo movil */
-@media (max-width: 1000px){
+@media (max-width: 1200px){
     #img-div{
         height: 900px;
         transition: 21s;
