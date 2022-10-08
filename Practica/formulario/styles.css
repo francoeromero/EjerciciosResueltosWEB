@@ -77,11 +77,13 @@ body{
     text-align: center;
     letter-spacing: 0.1em;
 }
+/*input tamaño*/
 .inputBox{
     position: relative;
     width: 300px;
     margin-top: 35px;
 }
+/*input*/
 .inputBox input{
     position: relative;
     width: 100%;
@@ -93,6 +95,7 @@ body{
     font-size: 1em;
     letter-spacing: 0.05em;
 }
+/*span titulo de cada entrada*/
 .inputBox span{
     position: absolute;
     left: 0;
@@ -103,9 +106,20 @@ body{
     letter-spacing: 0.05em;
     transition: 0.5s;
 }
-
+/*cambio de propiedades al darle click*/
 .inputBox input:valid ~ span, 
 .inputBox input:focus ~ span
 {
     color: #45f3ff;
-}}
+    transform: translateY(-34px);
+    font-size: 0.75em;
+}
+/*linea subrayada del input*/
+.inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+}
