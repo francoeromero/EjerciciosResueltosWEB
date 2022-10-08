@@ -163,10 +163,17 @@ input[type="submit"]
     font-weight: 600;
     cursor: pointer;
     letter-spacing: 5px;
+    height: 40px;
 }
 /*cuando se da click baja la opacidad*/
 input[type="submit"]:active
 {
     opacity: 0.6;
 
+}
+
+input[type="submit"]:hover
+{
+    color: white;
+    background: #51eef9;
 }
