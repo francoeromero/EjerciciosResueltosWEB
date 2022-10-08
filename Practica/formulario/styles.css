@@ -59,7 +59,7 @@ body{
         transform: rotate(360deg);
     }
 }
-
+/*ultimo paso para hacer los bordes animados*/
 .form{
     position: absolute;
     inset: 2px; /*borde*/
