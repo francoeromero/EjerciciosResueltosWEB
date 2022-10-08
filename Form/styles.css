@@ -1,0 +1,134 @@
+body{
+    background-image: 
+    linear-gradient(90deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main{
+    width: 55%;
+    height: 75%;
+    background-color: rgba(49, 49, 77, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+#title{
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.8);
+    font-weight: 1;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.7rem;
+}
+
+#survey-form{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 1%; 
+    font-size: 1.2rem; 
+}
+
+.form__input{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0.4rem 0.20rem;
+    color: gray;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.form__input:focus{
+    outline: 2px solid rgba(44, 115, 174, 0.963);
+    box-shadow: 0 0 5px rgba(44, 115, 174, 0.963);
+}
+
+#dropdown{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    padding: 0.4rem 0.20rem;
+    color: gray;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#dropdown:focus{
+    outline: 2px solid rgba(44, 115, 174, 0.963);
+    box-shadow: 0 0 5px rgba(44, 115, 174, 0.963);
+}
+
+.input-radio{
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 0.7rem;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
+    
+}
+
+#opcion{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    padding: 0.4rem 0.2rem;
+    color: gray;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#opcion:focus{
+    outline: 2px solid rgba(44, 115, 174, 0.963);
+    box-shadow: 0 0 5px rgba(44, 115, 174, 0.963);
+}
+
+.input-check{
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 0.7rem;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
+}
+
+textarea:focus{
+    outline: 2px solid rgba(44, 115, 174, 0.963);
+    box-shadow: 0 0 5px rgba(44, 115, 174, 0.963);
+}
+
+.submit{
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #37af65;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #37af65;
+    font-size: 1.2rem;
+}
