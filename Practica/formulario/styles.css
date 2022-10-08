@@ -157,15 +157,16 @@ input[type="submit"]
     outline: none;
     background: #45f3ff;
     padding: 11px 25px;
-    width: 100px;
+    width: 300px;
     margin-top: 10px;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
+    letter-spacing: 5px;
 }
 /*cuando se da click baja la opacidad*/
 input[type="submit"]:active
 {
-    opacity: 0.8;
+    opacity: 0.6;
 
 }
