@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--encabezado-->
+   <!--<header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"> <i> Thank you for taking the time to help us improve the platform</i></p>
+    </header>--> 
+<!--el formulario-->
+    <main id="main"><!-- class box contenedor completo -->
+
+        <div class="form"><!--contenedor formulario-->
+            <h2>Titulo</h2>
+            <div class="inputBox"><!--contenedor input-->
+                
+                <input type="text" id="name" required="required">
+                <span id="name-label" >Name</span><br>
+                <i></i> 
+
+            </div>
+
+            <div class="inputBox"> 
+                <input type="text" id="lastname" required="required">
+                <span id="lastname-label" >Lastname</span><br>
+                <i></i> 
+            </div>
+
+            <div class="inputBox"> 
+                <input type="password" id="password" required="required">
+                <span id="password" >Password</span><br>
+                <i></i> 
+            </div>
+
+            <div class="inputBox">
+                <input type="email" id="email" name="email" class="form__input" required="required">
+                <span  id="email-label">Email</span><br>
+                <i></i>
+            </div>
+
+            <div class="inputBox">
+                <input type="number" id="age" name="age" min="10" max="99" class="form__input"  required="required">
+                <span  id="email-label">Age</span><br>
+                <i></i>
+            </div>
+<!--------------------------------------------------------->
+            <p>Which option best describes your current role?</p>
+            <select name="dropdown" id="dropdown" class="inputBox"  required>
+                <option disabled selected value>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Job">Full time Job</option>
+                <option value="Learner">Full time Learner</option>
+                <option value="PreferNo">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select><br>
+<!--------------------------------------------------------->
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+
+                <label for="Definitely" class="radio">
+                <input type="radio" name="indoor-outdoor" id="definitely" class="input-radio">
+                Definitely 
+                </label><br>
+    
+                <label for="Maybe" class="radio">
+                    <input type="radio" name="indoor-outdoor" id="Maybe" class="input-radio">
+                   Maybe
+                </label><br>
+    
+                <label for="Not sure" class="radio">
+                    <input type="radio" name="indoor-outdoor" id="Not sure" class="input-radio">
+                    Not sure
+                </label><br>
+<!--------------------------------------------------------->                <p>What is your favorite feature of freeCodeCamp?</p>
+
+            <select name="opcion" id="opcion">
+                <option disabled selected value>Select current role</option>
+                <option value="challenges">Challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="Comunity">Comunity</option>
+                <option value="OpenSource">OpenSource</option>
+            </select><br>
+                
+            
+
+
+            <div class="links"> 
+                <a href="#">Forgot Password</a>
+                <a href="#">Signup</a>
+            </div>
+
+            <input type="submit" value="Login"> <!--el enviar-->
+
+        </div>
+    </main>
+</body>
+</html>
