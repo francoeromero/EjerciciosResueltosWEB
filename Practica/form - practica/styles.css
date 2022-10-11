@@ -168,7 +168,7 @@ body{
 
 /* texto parrafo*/
 
-.text{
+.text1{
     color: white;
     font-size: 1.3rem;
     text-align: center;
@@ -176,6 +176,12 @@ body{
     margin-bottom: -30px;
 }
 
+.text2{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 
 
 
