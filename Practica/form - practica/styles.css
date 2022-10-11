@@ -173,7 +173,8 @@ body{
     font-size: 1.3rem;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: -30px;
+    margin-bottom: -20px;
+    font-weight: bold;
 }
 
 .text2{
@@ -181,7 +182,18 @@ body{
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
+#definitely, #Maybe, #Not-sure{
+    color: white;
+    scale: 1.5;
+}
 
+h4{
+    color: white;
+    margin-left: 40px;
+    margin-top: -20px;
+    font-size: 1.2rem;
+}
 
