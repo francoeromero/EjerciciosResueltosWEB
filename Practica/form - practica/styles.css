@@ -18,6 +18,7 @@
 #description{
     text-align: center;
     color: white;
+    margin-bottom: -50px;
 }
 /*fondo del viewport*/
 body{
@@ -27,6 +28,14 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background: #23242a;
+    /*imagen de fondo*/
+    background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(https://img.freepik.com/vector-premium/fondo-juego-negro-naranja_604338-18.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #main{
@@ -305,4 +314,50 @@ a{
     color: #1eb337;
     text-decoration: none;
 }
-a:hover{
+
+
+    /*footer*/
+
+hr{
+    border: 2px solid var(--color);
+    width: 100%;
+    border-top: none;
+}
+    footer{
+        display: flex;
+        background-color: transparent;
+        width: 100%;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .items-footer a{
+        text-decoration: none;
+        padding-right: 30px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .items-footer li {
+        list-style: none;
+    }
+    .items-footer{
+        display: flex;
+    }
+    
+    
+    .copyright {
+     width: 100%;
+        color: white;
+        text-align: center;
+        margin-right: -100px;
+    }
