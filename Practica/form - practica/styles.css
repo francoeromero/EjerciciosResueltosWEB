@@ -108,6 +108,9 @@ body{
     letter-spacing: 0.1em;
 }
 /*input tamaño los cuadrados naranjas*/
+.label{
+    color: #28292d;
+}
 .inputBox{
     position: relative;
     width: 580px;

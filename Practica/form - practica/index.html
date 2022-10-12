@@ -16,12 +16,12 @@
 <!--el formulario-->
     <main id="main"><!-- class box contenedor completo -->
 
-        <div class="form"><!--contenedor formulario-->
+        <form class="form" id="survey-form"><!--contenedor formulario-->
             <h2>Register</h2>
             <div class="inputBox"><!--contenedor input-->
-                
                 <input type="text" id="name" required="required">
                 <span id="name-label" >Name</span><br>
+                <label id="name-label" class="label">name</label>
                 <i></i> 
 
             </div>
@@ -29,24 +29,31 @@
             <div class="inputBox"> 
                 <input type="text" id="lastname" required="required">
                 <span id="lastname-label" >Lastname</span><br>
+                <label id="lastname-label" class="label">lastname</label>
                 <i></i> 
             </div>
 
             <div class="inputBox"> 
                 <input type="password" id="password" required="required">
                 <span id="password" >Password</span><br>
+                <label id="password-label" class="label">password</label>
                 <i></i> 
             </div>
 
             <div class="inputBox">
+                <label for="" id="email-label"></label>
                 <input type="email" id="email" name="email" class="form__input" required="required">
                 <span  id="email-label">Email</span><br>
+                <label id="email-label" class="label">email</label>
                 <i></i>
             </div>
 
             <div class="inputBox">
-                <input type="number" id="age" name="age" min="10" max="99" class="form__input"  required="required">
-                <span  id="email-label">Age</span><br>
+                <label for="" id="number-label"></label>
+                <input type="number" id="number" name="age" min="10" max="99" class="form__input"  required="required">
+                <span  id="number-label">Age</span><br>
+                <label id="number-label" class="label">number</label>
+                
                 <i></i>
             </div>
 <!--------------------------------------------------------->
@@ -160,7 +167,7 @@
             </div>
 
 
-        </div>
+        </form>
     </main>
     <hr>
     <footer class="footer">
