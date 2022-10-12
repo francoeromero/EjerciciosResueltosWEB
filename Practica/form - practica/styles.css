@@ -365,4 +365,34 @@ hr{
         margin-right: -100px;
     }
 
+    @media (max-width: 1200px){
+        #main{
+            width: 320px;
+            transition: 1s;
+            height: 2100px;
+        }
+        #main::after{
+            width: 320px;
+            height: 2100px;
+            transition: 1s;
+        }
+        #main::before{
+            width: 320px;
+            height: 2100px;
+            transition: 1s;
+        }
+        .inputBox{
+            width: 200px;
+            
+        }
+        #dropdown{
+            width: 200px;
+        }
+        #opcion{
+            width: 200px;
+        }
+    }
+
+
+
     
