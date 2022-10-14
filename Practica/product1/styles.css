@@ -13,10 +13,18 @@ body{
     min-height: 100vh;
     background: #131313;
 }
+#content{
+    display: flex;
+    flex-direction: column;
+}
 /*contenedor principal*/
 .container
 {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 
 }
 /*contenedor gris*/
@@ -27,6 +35,7 @@ body{
     background: #232323;
     border-radius: 20px;
     overflow: hidden;
+    margin: 10px;
 }
 /*dentro del contenedor gris, creamos un circulo*/
 .container .card:before
