@@ -147,6 +147,10 @@ img{
     transition-delay: 0.5s;
 }
 
+.container .card:hover .contentBx .color h3{
+    color: #fff;
+}
+
 /*texto de size*/
 
 .container .card .contentBx .size h3{
@@ -180,12 +184,21 @@ img{
 }
 .container .card .contentBx .color span
 {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background: #ff0;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .contentBx .color span:hover{
+    width: 30px;
+    height: 30px;
+    transition: .5s;
 }
 
 .container .card .contentBx .color span:nth-child(2)
