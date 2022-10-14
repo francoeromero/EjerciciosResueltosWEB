@@ -46,7 +46,7 @@ body{
 {
     clip-path: circle(300px at 80% -20%);
 }
-
+/*texto de fondo grande del contenido gris*/
 .container .card:after
 {
     content: 'Nike';
@@ -58,11 +58,11 @@ body{
     font-style: italic;
     color: rgba(255,255,255,0.04);
 }
-
+/*escalamos la imagen del botin*/
 img{
     scale: 0.8;
 }
-
+/*seleccionamos el contenedor del botin imgBx*/
 .container .card .imgBx
 {
     position: absolute;
@@ -74,12 +74,12 @@ img{
     height: 220px;
     transition: 0.5s;
 }
-
+/*El hover para que cuando se selecciona se mueva*/
 .container .card:hover .imgBx{
     top: -10%;
     transform: translate(0%);
 }
-
+/*seleccionamos especificamente el botin osea la img*/
 .container .card .imgBx img{
     position: absolute;
     top: 50%;
@@ -87,7 +87,7 @@ img{
     transform: translate(-50%, -50%) rotate(25deg);
     width: 270px;
 }
-
+/*Titulo Nike shoes, contenedor del texto*/
 .container .card .contentBx{
     position: absolute;
     bottom: 0;
