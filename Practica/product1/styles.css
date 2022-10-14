@@ -13,11 +13,12 @@ body{
     min-height: 100vh;
     background: #131313;
 }
+/*contenedor de todas las cajas*/
 #content{
     display: flex;
     flex-direction: column;
 }
-/*contenedor principal*/
+/*contenedor de 3 cards*/
 .container
 {
     position: relative;
@@ -27,6 +28,8 @@ body{
     justify-content: center;
 
 }
+
+/*---------------------*/
 /*contenedor gris*/
 .container .card{
     position: relative;
