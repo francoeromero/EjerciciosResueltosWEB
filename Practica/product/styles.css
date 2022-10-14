@@ -13,11 +13,13 @@ body{
     min-height: 100vh;
     background: #131313;
 }
+/*contenedor principal*/
 .container
 {
     position: relative;
-}
 
+}
+/*contenedor gris*/
 .container .card{
     position: relative;
     width: 320px;
@@ -26,6 +28,7 @@ body{
     border-radius: 20px;
     overflow: hidden;
 }
+/*dentro del contenedor gris, creamos un circulo*/
 .container .card:before
 {
     content: '';
@@ -38,7 +41,7 @@ body{
     clip-path: circle(150px at 80% 20%);
     transition: 0.5s ease-in-out;
 }
-
+/* en hover le cambiamos el circulo*/
 .container .card:hover:before
 {
     clip-path: circle(300px at 80% -20%);
