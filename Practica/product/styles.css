@@ -97,18 +97,18 @@ img{
     transition: 1s;
     z-index: 10;
 }
-
+/*hover del contenedor del titulo para que suba */
 .container .card:hover .contentBx{
     height: 210px;
 }
-
+/*seleccionamos el texto del titulo especificamente*/
 .container .card .contentBx h2 {
     position: relative;
     font-weight: 800;
     letter-spacing: 1px;
     color: #fff;
 }
-
+/*seleccionamos a las dos clases de size y color del texto*/
 .container .card .contentBx .size,
 .container .card .contentBx .color{
     display: flex;
@@ -119,14 +119,14 @@ img{
     opacity: 0;
     visibility: hidden;
 }
-
+/* hover del size, los numeros de calzado*/
 .container .card:hover .contentBx .size{
     opacity: 1;
     visibility: visible;
     transition-delay: 0.5s;
 }
+/*texto de size*/
 
-.container .card .contentBx .size h3,
 .container .card .contentBx .size h3{
     color: #fff;
     font-weight: 300;
@@ -135,7 +135,7 @@ img{
     letter-spacing: 2px;
     margin-right: 10px;
 }
-
+/*los cuadrados que contiene un numero de calzado*/
 .container .card .contentBx .size span{
     width: 26px;
     height: 26px;
@@ -151,7 +151,7 @@ img{
     border-radius: 4px;
     cursor: pointer;
 }
-
+/*hover de los cuadrados*/
 .container .card .contentBx .size span:hover{
     background: #9bdc28;
 
