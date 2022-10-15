@@ -33,7 +33,15 @@ header{
 
 header a:hover {
     color: white;
+    transition: 0.5s;
 }
+
+ul li a{
+    
+    z-index: 0;
+    
+}
+
 
 
 .logo{
