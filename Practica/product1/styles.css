@@ -15,10 +15,110 @@ body{
     flex-direction: column;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(126, 126, 126, 0.5);
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    min-height: 60px;
+    z-index: 1000;
+}
+
+.logo{
+    height: 50px;
+    margin-left: 10px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 60px;
+    color: black;
+}
+
+
+/*EMAIL*/
+
+.title {
+    text-align: center;
+    margin-top: 150px;
+    color: #fff;
+}
+
+.input-email{
+    width: 50%;
+    height: 30px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: gray;
+    margin-top: 30px;
+}
+
+.input-email:focus{
+    outline: 1px solid black;
+    border: 1px solid black;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.input-submit{
+    width: 10%;
+    background-color: orange;
+    border: 1px solid orange;
+    height: 30px;
+    font-weight: 900;
+    min-width: 120px;
+    margin-bottom: 70px;
+    border-radius: 30px;
+}
+
+
+
+
+
+/*TEXTOS*/
+.features{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+#features{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(173, 173, 173);
+}
+
+.img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    
+}
 
 
 
 /*videos*/
+.title-work{
+    text-align: center;
+    color: white;
+}
 .videos{
     display: flex;
     flex-direction: row;
@@ -31,7 +131,7 @@ iframe{
     width: 510px;
 }
 iframe:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.5s;
 }
 
