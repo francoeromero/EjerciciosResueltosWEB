@@ -688,15 +688,15 @@ img{
     color: rgba(255,255,255,0.04);
 }
 /*escalamos la imagen del botin*/
-img{
-    scale: 0.8;
+.card-c .imgBx-c img{
+    scale: 1;
 }
 /*seleccionamos el contenedor del botin imgBx*/
 .container .card-c .imgBx-c
 {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 17%;
     transform: translateY(-50%);
     z-index: 10000;
     width: 100%;
@@ -705,7 +705,7 @@ img{
 }
 /*El hover para que cuando se selecciona se mueva*/
 .container .card-c:hover .imgBx-c{
-    top: -10%;
+    top: -7%;
     transform: translate(0%);
 }
 /*seleccionamos especificamente el botin osea la img*/
