@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+/*Contenedor del header vertical*/
+#navbar{
+    border: 1px solid black;
+    background-color: rgb(211, 211, 211);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+}
+
+
+/*el contenedor del main*/
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid black;
+    background-color: rgb(197, 197, 134);
+    flex-direction: row;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: 4900px;
+    margin-left: 200px;
+    
+}
+/* contenido principal */
+#main-doc{
+    border: 1px solid black;
+    background-color: rgb(211, 211, 211);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* personalizamos las cajas dentro de la barra lateral que contiene los anclajes*/
+.nav-link{
+    background-color: rgb(214, 214, 214);
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -18px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+/* las secciones del contenido principal*/
+.main-section{
+    margin: 20px;
+}
