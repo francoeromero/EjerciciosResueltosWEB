@@ -27,7 +27,14 @@ header{
     height: 50px;
     min-height: 60px;
     z-index: 1000;
+   
 }
+
+
+header a:hover {
+    color: white;
+}
+
 
 .logo{
     height: 50px;
@@ -83,6 +90,12 @@ nav a {
     min-width: 120px;
     margin-bottom: 70px;
     border-radius: 30px;
+}
+
+.input-submit:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    box-shadow: 1px 4px 10px 2px black;
 }
 
 
