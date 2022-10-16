@@ -25,6 +25,17 @@ body{
     position: fixed; 
 }
 
+#links a {
+    margin-right: 20px;
+    border: none;
+    width: 100%;
+   }
+
+#links a:hover {
+        background: #03a9f4;
+   }
+
+
 
 /*el contenedor del main*/
 #content{
@@ -89,6 +100,14 @@ body{
    #links a {
     margin-right: 20px;
     border: none;
+    width: 100%;
+    border-radius: 50%;
+   }
+   #links a:hover {
+        background: #03a9f4;
+        border-radius: 50%;
+        padding: 10px;
+        transition: 0.5s;
    }
     
     #navbar header {

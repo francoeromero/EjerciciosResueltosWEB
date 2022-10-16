@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <id id="toggle"></div>
-    <id id="sidebar"></div>
+    <id id="toggle"></id>
+    <id id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </id>
 
     <script>
         //para cuando le des click al cuadrado se active otra config
         const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
         toggle.onclick = function(){
             toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+
         }
     </script>
 </body>

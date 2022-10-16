@@ -49,3 +49,44 @@ body{
 #toggle.active::after{
     transform: translateY(0px) rotate(-45deg);
 }
+
+
+/*barra lateral*/
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /*para ocultarlo sino le das a 0 y se muestra*/
+    width: 300px;
+    height: 100vh;
+    background: #003147;
+    transition: 0.5s;
+}
+/*javascript */
+#sidebar.active {
+    left: 0px; /* para mostrarlo*/
+}
+
+#sidebar ul {
+    position: relative;
+    margin-top: 50px;
+}
+
+#sidebar ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+#sidebar ul li:hover {
+    background: #03a9f4 ;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+
