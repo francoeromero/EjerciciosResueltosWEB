@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+/*Contenedor del header vertical*/
+#navbar{
+    border: 1px solid black;
+    background-color: rgb(211, 211, 211);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+}
+
+
+/*el contenedor del main*/
+#content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+/* contenido principal */
+#main-doc{
+    border: 1px solid black;
+    background-color: rgb(211, 211, 211);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* personalizamos las cajas dentro de la barra lateral que contiene los anclajes*/
+.nav-link{
+    background-color: rgb(214, 214, 214);
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -18px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+/* las secciones del contenido principal*/
+.main-section{
+    margin: 20px;
+}
+
+@media (max-width: 1000px){
+    /*la barra lateral se convierte en horizontal*/
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 20%;
+        transition: 0.5s;
+        
+    }
+    /*los enlaces*/
+   #links {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0px solid black;
+   }
+
+   #links a {
+    margin-right: 20px;
+    border: none;
+   }
+    
+    #navbar header {
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: non;
+    }
+
+    #main-doc {
+        width: 100%;
+        transition: 0.5s;
+        margin-top: 150px;
+    }
+}
