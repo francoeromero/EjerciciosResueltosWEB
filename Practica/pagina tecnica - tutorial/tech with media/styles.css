@@ -106,4 +106,8 @@ body{
         transition: 0.5s;
         margin-top: 150px;
     }
+
+    section[id]{
+        scroll-margin-top: 120px;
+    }
 }
