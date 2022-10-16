@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="toggle"></div>
-    <div class="sidebar"></div>
+    <id id="toggle"></div>
+    <id id="sidebar"></div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
