@@ -67,7 +67,8 @@ body{
     margin: 20px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
+    /*la barra lateral se convierte en horizontal*/
     #navbar {
         display: flex;
         flex-direction: column;
@@ -78,12 +79,13 @@ body{
         transition: 0.5s;
         
     }
+    /*los enlaces*/
    #links {
     display: flex;
     flex-direction: row;
     border-bottom: 0px solid black;
    }
-   
+
    #links a {
     margin-right: 20px;
     border: none;
@@ -102,5 +104,6 @@ body{
     #main-doc {
         width: 100%;
         transition: 0.5s;
+        margin-top: 150px;
     }
 }
