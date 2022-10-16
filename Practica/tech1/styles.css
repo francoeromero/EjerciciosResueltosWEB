@@ -21,7 +21,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-/*linea blanca*/
+/*primera linea blanca horizontal*/
 #toggle::before{
     content: '';
     position: absolute;
@@ -31,7 +31,7 @@ body{
     transform: translateY(-5px); 
     transition: 0.2s;
 }
-
+/*segunda linea blanca horizontal*/
 #toggle::after{
     content: '';
     position: absolute;
@@ -41,7 +41,7 @@ body{
     transform: translateY(5px); 
     transition: 0.2s;
 }
-
+/* a las dos lineas lo giro a 45 grados para formar una X*/
 #toggle.active::before{
     transform: translateY(0px) rotate(45deg);
 }
