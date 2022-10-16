@@ -70,7 +70,7 @@ body{
 @media (max-width: 800px){
     #navbar {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-end;
         width: 100%;
@@ -78,11 +78,25 @@ body{
         transition: 0.5s;
         
     }
+   #links {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0px solid black;
+   }
+   
+   #links a {
+    margin-right: 20px;
+    border: none;
+   }
+    
     #navbar header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         transition: 0.5s;
-
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: non;
     }
 
     #main-doc {
