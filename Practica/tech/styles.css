@@ -4,14 +4,24 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
     width: 100%;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(163, 163, 163);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     
 }
 
+.title {
+    color: #fff;
+}
 
+a{
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 /*cuadrado chiquito*/
@@ -21,7 +31,7 @@ body{
     right: 20px;
     width: 60px;
     height: 60px;
-    background: #03a9f4;
+    background: rgba(0,0,0,0.6);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -61,32 +71,34 @@ body{
 /*Contenedor del header vertical*/
 #navbar{
     border: 1px solid black;
-    background-color: rgb(211, 211, 211);
+    background-color: rgba(0,0,0,0.8);
     color: black;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    width: 230px;
+    width: 20%;
     height: 100vh;
     text-align: center;
     position: fixed; 
-    left: -230px;
+    left: -270px;
+    transition: 0.5s;
     
 }
-
 /*javascript */
 #navbar.active {
     left: 0px; /* para mostrarlo*/
-    
 }
+
 
 #links a {
     margin-right: 20px;
     border: none;
     width: 100%;
+    background: rgba(0,0,0,0.1);
+    margin-top: 20px;
    }
 
 #links a:hover {
-        background: #03a9f4;
+        background: #181818;
    }
 
 
@@ -104,13 +116,19 @@ body{
     background-color: rgb(211, 211, 211);
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    width: 80%;
+    width: 100%; /*80%*/
     height: 100%;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
+/*Javascript*/
+/*
+#main-doc.active {
+    width: 80%;
+}
+*/
 
 /* personalizamos las cajas dentro de la barra lateral que contiene los anclajes*/
 .nav-link{
@@ -133,46 +151,42 @@ body{
 }
 
 @media (max-width: 1000px){
+    #toggle{
+        margin-top: 10000px;
+    }
     /*la barra lateral se convierte en horizontal*/
     #navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        
         width: 100%;
         height: 20%;
         transition: 0.5s;
+        margin-left: 270px;
+        overflow: hidden;
         
     }
     /*los enlaces*/
+    
    #links {
     display: flex;
-    flex-direction: row;
-    border-bottom: 0px solid black;
+
+   }
+   a{
+    font-size: 0.7rem;
+    margin-bottom: 50px;
+   
    }
 
-   #links a {
-    margin-right: 20px;
-    border: none;
-    width: 100%;
-    border-radius: 50%;
-   }
+
+   
    #links a:hover {
-        background: #03a9f4;
-        border-radius: 50%;
-        padding: 10px;
+        
+        font-size: 0.9rem;
+        
         transition: 0.5s;
+       
    }
     
-    #navbar header {
-        display: flex;
-        flex-direction: column;
-        transition: 0.5s;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        border: non;
-    }
+  
 
     #main-doc {
         width: 100%;
@@ -183,4 +197,6 @@ body{
     section[id]{
         scroll-margin-top: 120px;
     }
+
+    
 }
