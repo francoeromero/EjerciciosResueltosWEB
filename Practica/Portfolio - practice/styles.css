@@ -52,12 +52,12 @@ ul li a{
     
 }
 
-#toggle{
-    opacity: 1;
-}
+
 /*MEDIA*/
 @media (max-width: 1000px){
-
+    ul{
+        opacity: 0;
+    }
 
     
     #toggle{
@@ -71,6 +71,7 @@ ul li a{
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 2;
         
     }
     #toggle::before{
