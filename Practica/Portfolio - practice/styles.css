@@ -11,6 +11,8 @@
     flex-direction: row;
     justify-content: space-between;
     background: rgb(0, 0, 0, 0.5);
+    top: 0;
+    height: 40px;
 }  
 
 ul {
@@ -31,13 +33,14 @@ ul li {
 
 ul li:hover {
     background: rgb(0, 0, 0);
-    transition: 0.5s;
+    transition: 1s;
 }
 ul li a{
     text-decoration: none;
     margin-right: 20px;
     margin-left: 20px;
     color: #fff;
+    font-family: sans-serif;
 }
 
 #logo {
@@ -46,4 +49,92 @@ ul li a{
     font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
+    
 }
+
+#toggle{
+    opacity: 1;
+}
+/*MEDIA*/
+@media (max-width: 1000px){
+
+
+    
+    #toggle{
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 60px;
+        height: 40px;
+        background: rgba(0,0,0,0.6);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #toggle::before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        transform: translateY(-5px); 
+        transition: 0.2s;
+    }
+    /*segunda linea blanca horizontal*/
+    #toggle::after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        transform: translateY(5px); 
+        transition: 0.2s;
+    }
+    /* a las dos lineas lo giro a 45 grados para formar una X*/
+    #toggle.active::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+    
+    #toggle.active::after{
+        transform: translateY(0px) rotate(-45deg);
+    }
+    
+}
+
+/*FIN DEL HEADER*/
+
+/*SECTION 1*/
+
+#welcome-section{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient( rgb(133, 133, 133), #254f86);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.title{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 25px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.subtitle{
+    color: rgb(27, 27, 27);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+
