@@ -57,6 +57,7 @@ ul li a{
 @media (max-width: 1000px){
     ul{
         opacity: 0;
+        transition: 1s;
     }
 
     
@@ -92,16 +93,7 @@ ul li a{
         background-color: #fff;
         transform: translateY(5px); 
         transition: 0.2s;
-    }
-    /* a las dos lineas lo giro a 45 grados para formar una X*/
-    #toggle.active::before{
-        transform: translateY(0px) rotate(45deg);
-    }
-    
-    #toggle.active::after{
-        transform: translateY(0px) rotate(-45deg);
-    }
-    
+    }  
 }
 
 /*FIN DEL HEADER*/
