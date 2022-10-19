@@ -1,0 +1,23 @@
+main {
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+}
+
+/*Nombramos las areas*/
+
+header {
+    grid-area: header;
+}
+
+aside:first {
+    grid-area: aside;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
