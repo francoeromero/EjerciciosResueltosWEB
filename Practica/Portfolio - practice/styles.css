@@ -58,12 +58,9 @@ ul li a{
 
 @media (max-width: 1000px){
 
-    #projects-grid a {
+    #projects-grid  {
         grid-template-areas: 
-            "projecta"
-            "projectb"
-            "projectc"
-            "projectd";
+            "projecta projectb projectc projectd";
     }
     
 
@@ -181,8 +178,8 @@ ul li a{
     grid-template-rows: auto  auto ;*/
     justify-content: center;
     grid-gap: 10px 10px;
-    min-width:;
-    grid-template-areas: 
+    min-width: 1000px;
+    grid-template-areas:  
     "projecta projectb"
     "projectc projectd";
     
