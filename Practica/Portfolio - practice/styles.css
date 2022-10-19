@@ -54,7 +54,11 @@ ul li a{
 
 
 /*MEDIA*/
+
+
 @media (max-width: 1000px){
+    
+
     ul{
         opacity: 0;
         transition: 1s;
@@ -93,8 +97,15 @@ ul li a{
         background-color: #fff;
         transform: translateY(5px); 
         transition: 0.2s;
-    }  
+    }   
+   
+    #projects-grid {
+        grid-column: 3 / span 1;
+    }
+
+
 }
+
 
 /*FIN DEL HEADER*/
 
@@ -136,23 +147,39 @@ ul li a{
 .project-tile {
     text-align: center;
     width: 100%;
-    background-color: rgb(71, 89, 167);
+    background-color: #254f86;
 }
+ /*grid */
 
+ .project-a {
+    grid-area: projecta;
+ }
+ .project-b {
+    grid-area: projectb;
+ }
+ .project-c {
+    grid-area: projectc;
+ }
+ .project-d {
+    grid-area: projectd;
+ }
 
 
 #projects-grid {
     width: auto;
     margin: 0 ;
-    background-color: rgb(71, 89, 167);
+    background-color: #254f86;
     padding: 20px;
     /*GRID*/
     display: grid;
-    grid-template-columns: auto auto  ;
+    grid-template-columns: auto auto;
     grid-template-rows: auto  auto ;
     justify-content: center;
-    grid-gap: 10px 10px ;
+    grid-gap: 10px 10px;
+    min-width: 1000px;
+    
 }
+
 
 #imgpage{
     margin-top: 0px;
@@ -168,7 +195,7 @@ ul li a{
 
 #imgpage:hover {
     box-shadow: 0px 20px 50px  black;
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.7s;
 }
 
