@@ -85,7 +85,10 @@
     width: 100%;
   }
   
-  /* nav */
+
+
+
+  /* ENCABEZADOS */
   
   .nav {
     display: flex;
@@ -94,8 +97,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-red);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background: linear-gradient(180deg, #b1b1b1 0%, #181719 100%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
     z-index: 10;
   }
   
@@ -124,7 +127,7 @@
     background: var(--main-blue);
   }
   
-  /* Welcome section */
+  /* SECTION 1 WELCOME */
   
   .welcome-section {
     display: flex;
@@ -141,7 +144,7 @@
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    color: #FFF;
   }
   
   /* Projects section */
