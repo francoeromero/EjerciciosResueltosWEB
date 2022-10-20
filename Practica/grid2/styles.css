@@ -4,18 +4,24 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.project-tile {
+    text-align: center;
+    width: 100%;
+    background-color: #254f86;
+}
+
 #projects-grid {
     width: auto;
-    margin: 0;
     background-color: #254f86;
-    padding: 20px;
-    display: grid;
-    height: 100vh;
     grid-gap: 10px 10px;
+    display: grid;
+    height: 100%;
+    justify-content: center;
     /*Especificar posicion de las areas*/
     grid-template-areas: 
-        "header aside"
-        "article footer";
+        "projecta projectb"
+        "projectc projectd";
+    transition: 1s;
 }
 
 /* responsive*/
@@ -23,37 +29,38 @@
 @media (max-width: 900px) {
     #projects-grid {
         grid-template-areas: 
-            "header"
-            "aside"
-            "article"
-            "footer";
+            "projecta"
+            "projectb"
+            "projectc"
+            "projectd";
         justify-content: center;
+        transition: 1s;
     }
 }
 
 /*Nombramos las areas*/
 
 .project-a {
-    grid-area: header;
+    grid-area: projecta;
     background: gray;
     margin: 10px;
 }
 
 .project-b {
-    grid-area: aside;
+    grid-area: projectb;
     background: gray;
     margin: 10px;
 }
 
 
 .project-c {
-    grid-area: article;
+    grid-area: projectc;
     background: gray;
     margin: 10px;
 }
 
 .project-d {
-    grid-area: footer;
+    grid-area: projectd;
     background: gray;
     margin: 10px;
 }
