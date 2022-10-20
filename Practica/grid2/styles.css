@@ -1,45 +1,77 @@
-main {
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#projects-grid {
+    width: auto;
+    margin: 0;
+    background-color: #254f86;
+    padding: 20px;
     display: grid;
     height: 100vh;
-    grid-gap: 10px;
+    grid-gap: 10px 10px;
     /*Especificar posicion de las areas*/
     grid-template-areas: 
-        "header"
-        "contenido"
-        "izquierda"
-        "derecha"
-        "footer";
+        "header aside"
+        "article footer";
 }
 
 /* responsive*/
 
-@media (min-width: 500px) {
-    main {
+@media (max-width: 900px) {
+    #projects-grid {
         grid-template-areas: 
-            "header header header"
-            "izquierda contenido derecha"
-            "footer footer footer";
+            "header"
+            "aside"
+            "article"
+            "footer";
+        justify-content: center;
     }
 }
 
 /*Nombramos las areas*/
 
-header {
+.project-a {
     grid-area: header;
+    background: gray;
+    margin: 10px;
 }
 
-aside:first-of-type {
-    grid-area: izquierda;
+.project-b {
+    grid-area: aside;
+    background: gray;
+    margin: 10px;
 }
 
-aside:last-of-type {
-    grid-area: derecha;
+
+.project-c {
+    grid-area: article;
+    background: gray;
+    margin: 10px;
 }
 
-article {
-    grid-area: contenido;
-}
-
-footer {
+.project-d {
     grid-area: footer;
+    background: gray;
+    margin: 10px;
+}
+
+#imgpage{
+    margin: 0;
+    box-shadow: 1px 10px 10px black;
+    background-color: rgb(49, 59, 96);
+    text-align: center;
+    line-height: 150px;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 90px;
+    border-radius: 10px;
+}
+
+#imgpage:hover {
+    box-shadow: 0px 20px 50px  black;
+    scale: 1.05;
+    transition: 0.7s;
 }
