@@ -213,3 +213,18 @@ ul li a{
 }
 
 /*FIN SECTION 3*/
+
+/*FOOTER*/
+
+hr {
+    border-top: 3px solid rgb(31, 33, 66);
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(49, 59, 96);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
