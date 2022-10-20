@@ -2,6 +2,24 @@ main {
     display: grid;
     height: 100vh;
     grid-gap: 10px;
+    /*Especificar posicion de las areas*/
+    grid-template-areas: 
+        "header"
+        "contenido"
+        "izquierda"
+        "derecha"
+        "footer";
+}
+
+/* responsive*/
+
+@media (min-width: 500px) {
+    main {
+        grid-template-areas: 
+            "header header header"
+            "izquierda contenido derecha"
+            "footer footer footer";
+    }
 }
 
 /*Nombramos las areas*/
@@ -10,12 +28,16 @@ header {
     grid-area: header;
 }
 
-aside:first {
-    grid-area: aside;
+aside:first-of-type {
+    grid-area: izquierda;
+}
+
+aside:last-of-type {
+    grid-area: derecha;
 }
 
 article {
-    grid-area: article;
+    grid-area: contenido;
 }
 
 footer {
