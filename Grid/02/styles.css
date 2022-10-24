@@ -5,7 +5,7 @@
 }
 .item1{
     background-image: 
-    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8LCn9orbsFCa0_TCp6bfEuV2WCvdI1hqy_tCAMh0TWGCE9xDJjuEcV3NxbyIW2vhXCE&usqp=CAU);
+    url(https://cassaplan.com.mx/wp-content/uploads/2020/04/01-render.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,15 +15,16 @@
     justify-content: center;
     overflow: hidden;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .item1:hover {
     transition: 0.7s;
     overflow: hidden;
     background-image: 
-    linear-gradient(90deg, rgba(196, 196, 196, 0.8), rgba(131, 131, 131, 0.3)),
-    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8LCn9orbsFCa0_TCp6bfEuV2WCvdI1hqy_tCAMh0TWGCE9xDJjuEcV3NxbyIW2vhXCE&usqp=CAU);
-    scale: 1.05;
+    linear-gradient(90deg, rgba(196, 196, 196, 0.2), rgba(131, 131, 131, 0.3)),
+    url(https://cassaplan.com.mx/wp-content/uploads/2020/04/01-render.jpg);
+    scale: 1.02;
 }
 
 
@@ -54,15 +55,16 @@ h1:hover {
     justify-content: center;
     overflow: hidden;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .item2:hover {
     transition: 0.7s;
     overflow: hidden;
     background-image: 
-    linear-gradient(90deg, rgba(196, 196, 196, 0.8), rgba(131, 131, 131, 0.3)),
+    linear-gradient(90deg, rgba(196, 196, 196, 0.2), rgba(131, 131, 131, 0.3)),
     url(https://www.lumion.es/wp-content/uploads/2021/08/8_Render-objetos.jpg);
-    scale: 1.05;
+    scale: 1.02;
 }
   .item3{
     background-image: 
@@ -76,15 +78,16 @@ h1:hover {
     justify-content: center;
     overflow: hidden;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .item3:hover {
     transition: 0.7s;
     overflow: hidden;
     background-image: 
-    linear-gradient(90deg, rgba(196, 196, 196, 0.8), rgba(131, 131, 131, 0.3)),
+    linear-gradient(90deg, rgba(196, 196, 196, 0.2), rgba(131, 131, 131, 0.3)),
     url(https://i0.wp.com/stillframerender.com/wp-content/uploads/2019/05/Visualizacion-Arquitectonica-stillframe-Render-studio-Final.png?resize=930%2C620&ssl=1);
-    scale: 1.05;
+    scale: 1.02;
 }
 
 .item4{
@@ -99,15 +102,16 @@ h1:hover {
     justify-content: center;
     overflow: hidden;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .item4:hover {
     transition: 0.7s;
     overflow: hidden;
     background-image: 
-    linear-gradient(90deg, rgba(196, 196, 196, 0.8), rgba(131, 131, 131, 0.3)),
+    linear-gradient(90deg, rgba(196, 196, 196, 0.2), rgba(131, 131, 131, 0.3)),
     url(https://www.arquitecturaconfidencial.com/wp-content/uploads/2021/08/Como-hacer-fotorrealismo-en-Vray.jpg);
-    scale: 1.05;
+    scale: 1.02;
 }
 
 .item5{
@@ -122,15 +126,16 @@ h1:hover {
     justify-content: center;
     overflow: hidden;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .item5:hover {
     transition: 0.7s;
     overflow: hidden;
     background-image: 
-    linear-gradient(90deg, rgba(196, 196, 196, 0.8), rgba(131, 131, 131, 0.3)),
+    linear-gradient(90deg, rgba(196, 196, 196, 0.2), rgba(131, 131, 131, 0.3)),
     url(https://i1.wp.com/aleso3d.com/wp-content/uploads/2018/03/vray-for-unreal-engine.jpg?fit=1410%2C800&ssl=1);
-    scale: 1.05;
+    scale: 1.02;
 }
 
 
@@ -146,15 +151,16 @@ h1:hover {
     justify-content: center;
     overflow: hidden;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .item6:hover {
     transition: 0.7s;
     overflow: hidden;
     background-image: 
-    linear-gradient(90deg, rgba(196, 196, 196, 0.8), rgba(131, 131, 131, 0.3)),
+    linear-gradient(90deg, rgba(196, 196, 196, 0.2), rgba(131, 131, 131, 0.3)),
     url(https://soyarquitectura.mx/wp-content/uploads/2022/04/galeria-render-6.jpg);
-    scale: 1.05;
+    scale: 1.02;
 }
 
 .container {
@@ -166,4 +172,11 @@ h1:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     height: 900px;
+    grid-gap: 10px 10px;
+}
+
+@media (min-width: 900px;) {
+    .container{
+        grid-template-columns: 1fr ;
+    }
 }
