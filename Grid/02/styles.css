@@ -3,3 +3,18 @@
     margin: 0;
     font-family: sans-serif;
 }
+.item1{
+    background:LightSkyBlue;
+}
+  .item2{
+    background:LightSalmon;
+}
+  .item3{
+    background:PaleTurquoise;
+}
+  .item4{
+    background:LightPink;
+}
+  .item5{
+    background:PaleGreen;
+}
