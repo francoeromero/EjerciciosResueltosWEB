@@ -8,7 +8,7 @@ body {
     background: rgb(63, 63, 63);
 }
 .item1 {
-   background: lightskyblue;
+   background: rgb(107, 107, 107);
    grid-area: header;
    text-align: end;
    height: 60px; 
