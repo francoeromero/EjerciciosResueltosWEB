@@ -50,7 +50,7 @@ a {
  }
 
  .item3{
-    background: paleturquoise;
+    background: rgb(190, 190, 190);
     grid-area: content;
     display: flex;
     flex-direction: column;
