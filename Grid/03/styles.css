@@ -62,7 +62,7 @@ a {
     font-size: 1.5em;
     height: 100%;
     width: 100%;
-    background: lightgray;
+    background: rgb(63, 63, 63);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto 1fr;
@@ -79,17 +79,18 @@ a {
         grid-template-columns: auto 1fr;
         grid-template-rows: auto 1fr auto;
         grid-template-areas:
-        "header advert"
+        "header header"
         "content advert"
-        "footer advert";
+        "footer footer";
+        
     }
  }
 
  @media (min-width: 1000px){
     .container {
         grid-template-areas: 
-        "header header"
+        "header advert"
         "content advert"
-        "footer footer";
+        "footer advert";
     }
  }
