@@ -59,7 +59,7 @@ a {
  }
 
  .item4 {
-    background: lightpink;
+    background: rgb(121, 121, 121);
     grid-area: footer;
     height: 60px; 
  }
