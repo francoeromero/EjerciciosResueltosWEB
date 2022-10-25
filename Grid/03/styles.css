@@ -2,6 +2,10 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    
+}
+body {
+    background: rgb(63, 63, 63);
 }
 .item1 {
    background: lightskyblue;
@@ -51,11 +55,13 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 20px;
  }
 
  .item4 {
     background: lightpink;
     grid-area: footer;
+    height: 60px; 
  }
 
  .container {
