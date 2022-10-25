@@ -28,7 +28,7 @@ a {
 }
 
 .item2 {
-    background: lightsalmon;
+    background: rgb(151, 140, 137);
     grid-area: advert;
     width: 200px;
  
