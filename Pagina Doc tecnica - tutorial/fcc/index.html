@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech page</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        *{
+            font-family: sans-serif;
+           
+        }
+        .codigo{
+            background: black;
+            color: white;
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <id id="toggle"></id>
+    
+        <nav id="navbar">
+            <header>
+                <h1 class="title">Javascript</h1>
+            <div id="links">
+                <a href="#introduccion"  class="nav-link-intro">Introducción</a><br>
+                <a  href="#already" class="nav-link">Tipos de datos primitivos</a><br>
+                <a  href="#java" class="nav-link">Sentencia de asignación</a><br>
+                <a  href="#hello" class="nav-link">Tipos de datos estructurados</a><br>
+                <a  href="#variables" class="nav-link">Estructuras</a><br>
+                <a  href="#declaring" class="nav-link">Mapas</a><br>
+                <a  href="#scope" class="nav-link">Listas de tamaño fijo (arrays)</a><br>
+                <a  href="#global" class="nav-link">Listas de tamaño variable</a><br>
+                <a  href="#constants" class="nav-link">Operadores</a><br>
+                <a  href="#data" class="nav-link">Funciones</a><br>
+                <a  href="#if" class="nav-link">Sentencias condicionales (if, switch, ternario)</a><br>
+                <a  href="#while" class="nav-link">Bucles (while, do…while, for)</a><br>
+                <a  href="#function" class="nav-link">Excepciones y control de errores</a><br>
+                <a  href="#reference" class="nav-link">Clases y objetos</a><br>
+                <a  href="#reference" class="nav-link">Funcionamiento de los punteros</a><br>
+                <a  href="#reference" class="nav-link">Compilador/Intérprete del lenguaje</a><br>
+                <a  href="#reference" class="nav-link">Librerías más usadas</a><br>
+                <a  href="#reference" class="nav-link">Librerías de testing</a><br>
+                <a  href="#reference" class="nav-link">Editor de Codigos recomendado</a><br>
+            </div>
+            </header>
+        </nav>
+    
+
+     <!--fin barra lateral-->
+
+
+     <div id="content"> <!--contenedor del main que seria el contenido principal-->
+
+        <main id="main-doc"><!--dentro del main voy a meter diferentes secciones con su id correspondiente al anclaje-->
+
+            <section id="Intro" class="main-section">
+                <header><h1>Intro</h1></header>
+                <p>JavaScript es un lenguaje de programación de alto nivel, dinámico y orientado a objetos. Se utiliza principalmente en el desarrollo de páginas web interactivas y aplicaciones web. Es uno de los lenguajes de programación más populares en el mundo, con una amplia comunidad de desarrolladores y una gran cantidad de recursos en línea disponibles. JavaScript se ejecuta en el navegador del cliente, lo que significa que puede ser utilizado para crear aplicaciones web interactivas sin necesidad de acceder a un servidor.</p>
+                <p>JavaScript se integra fácilmente con otros lenguajes, como HTML y CSS, lo que facilita la creación de aplicaciones web complejas.</p>
+                <p> La comunidad de JavaScript está en constante evolución y mejora, lo que significa que hay un flujo constante de nuevas características y mejoras en el lenguaje.</p>
+                <p>En resumen, JavaScript es un lenguaje de programación versátil y potente que se puede utilizar para una amplia gama de aplicaciones web, desde páginas web simples hasta aplicaciones complejas. Con una amplia comunidad de desarrolladores y una gran cantidad de recursos disponibles, es una excelente opción para aquellos interesados en el desarrollo web.</p>
+                <p>Hay muchas razones por las que alguien puede elegir usar JavaScript:</p>
+                <ul>
+                    <li>Interacción en tiempo real: JavaScript permite crear páginas web interactivas y aplicaciones en línea que pueden responder a la entrada del usuario en tiempo real.</li><br>
+                    <li>Mejora la experiencia del usuario: JavaScript puede ser utilizado para agregar efectos visuales, animaciones y otros elementos que mejoran la experiencia del usuario en una página web.</li><br>
+                    <li>Accesibilidad: JavaScript permite crear aplicaciones accesibles para personas con discapacidades, lo que contribuye a una web más inclusiva.</li><br>
+                    <li>Creación de aplicaciones en línea: Con JavaScript, es posible crear aplicaciones completas que se ejecutan en un navegador, lo que significa que no es necesario descargar o instalar software en el dispositivo del usuario.</li><br>
+                    <li>Popularidad y amplia comunidad: JavaScript es uno de los lenguajes de programación más populares en el mundo, lo que significa que hay una gran cantidad de recursos y una amplia comunidad de desarrolladores disponibles para ayudar y resolver problemas.</li><br>
+                </ul>
+                <p>Requisitos para aprender JavaScript: <b>HTML, CSS</b></p>
+                <code></code>
+                <code></code>
+            </section>
+
+
+
+            <section id="Variables" class="main-section">
+                <header><h1>Variables</h1></header>
+                <p>En JavaScript, una variable es un espacio en la memoria que se utiliza para almacenar valores. Las variables se pueden usar para almacenar datos como números, cadenas de texto, objetos, arreglos, etc. Las variables se declaran con la palabra clave "var" o "let" o "const".</p>
+                <p>Con "var" se pueden re-declarar las variables y su alcance es global y dentro de funciones.</p>
+                <p>Con "let" y "const" se pueden re-asignar las variables pero su alcance es solo dentro del bloque en el que está definido. "const" además de ser limitado al bloque no se puede re-asignar.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
+                <p>LET</p>
+                <ul>
+                    <li>Permite re-asignar el valor de la variable.</li><br>
+                    <li>Tiene un alcance de bloque, lo que significa que la variable es accesible solo dentro del bloque en el que se declaró.</li><br>
+                </ul>
+                <p>CONST</p>
+                <ul>
+                    <li>No permite re-asignar el valor de la variable una vez que se ha asignado por primera vez.</li><br>
+                    <li>Tiene un alcance de bloque, lo que significa que la variable es accesible solo dentro del bloque en el que se declaró.</li><br>
+                </ul>
+
+                <p>VAR todavía se puede usar en JavaScript, pero no se recomienda su uso por varias razones:</p>
+                <ul>
+                    <li>Alcance de función: La variable declarada con "var" tiene un alcance de función, lo que significa que es accesible en toda la función, incluyendo bloques dentro de la función. Este comportamiento puede causar problemas de lógica y difíciles de depurar.</li><br>
+                    <li>Re-declaración: "var" permite la re-declaración de variables con el mismo nombre, lo que puede causar problemas de lógica y difíciles de depurar.</li><br>
+                    <li>Confusión con "let" y "const": "var" se comporta de manera diferente a "let" y "const", lo que puede causar confusión y errores fáciles de evitar.</li><br>
+                </ul>
+
+                <div class="codigo">
+                <code>
+                    <p style="display: inline; color: rgb(124, 124, 255);">let</p> nombre = "Juan"; <br>
+                    console.log(nombre); <p style="display: inline; color: rgb(150, 150, 150);">// imprime "Juan"</p>
+                </code><br><br>
+                <code>
+                    <p style="display: inline; color: rgb(124, 124, 255);">const</p> PORCENTAJE = 0.5; <br>
+                    console.log(PORCENTAJE); <p style="display: inline; color: rgb(150, 150, 150);">// A la constante recomiendo que sea con mayúscula, son valores fijos</p>
+                </code><br><br>
+                <code>
+                    <p style="display: inline; color: rgb(124, 124, 255);">const</p> PI = 3.14; <br>
+                    console.log(PI); <p style="display: inline; color: rgb(150, 150, 150);">// son valores que nunca cambian y que se las puede llamar pero no reasignarlas </p>
+                </code>
+
+                </div>
+
+                
+            </section>
+
+
+            <section id="primitivos" class="main-section">
+                <header><h1>Tipos de datos primitivos</h1></header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, odio accusantium. Obcaecati possimus expedita praesentium quibusdam placeat dolorem alias, culpa iure quod eveniet. Possimus impedit similique, numquam voluptatibus vero error.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda placeat modi obcaecati rem ab iste hic maxime! Assumenda exercitationem minima atque! Magni ut commodi ipsam fugiat numquam, neque quasi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam tenetur laboriosam odio esse dolorem voluptate illum consequuntur illo sequi eius possimus ducimus atque, incidunt harum voluptatum deleniti aperiam cupiditate!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
+                <p>JavaScript tiene seis tipos de datos primitivos:</p>
+                <ul>
+                    <li><b>String:</b>  Una secuencia de caracteres, por ejemplo: "Hola mundo".</li><br>
+                    <li><b>Number:</b>  Un número, por ejemplo: 42 o 3.14.</li><br>
+                    <li><b>Booleanos:</b> Un valor lógico que puede ser verdadero o falso, por ejemplo: true o false.</li><br>
+                    <li><b>Undefined:</b> Un valor que indica que una variable ha sido declarada pero todavía no tiene un valor asignado</li><br>
+                    <li><b>Null:</b>  Un valor que representa la ausencia intencional de cualquier valor</li><br>
+                    <li><b>Symbol: </b> Un tipo de datos único e inmutable</li><br>
+                </ul>
+                <p>Estos son los tipos de datos primitivos de JavaScript y no son objetos. Algunos otros tipos de datos, como <b>Array</b>y<b>Object</b>   , son objetos y no son primitivos.</p>
+
+                <div class="codigo">
+                <code>
+                    <p style="display: inline; color: rgb(150, 150, 150);">// String o Cadena</p><br>
+                    let name = <p style="display: inline; color: rgb(167, 18, 18);">"Fran"</p> ; <br>
+                    console.log(typeof name); <p style="display: inline; color: rgb(150, 150, 150);">// con typeof es para saber que tipo de dato contiene la variable, entonce me estaria imprimiendo "string"</p>
+                </code><br><br>
+
+                <code>
+                    <p style="display: inline; color: rgb(150, 150, 150);">// Number</p><br>
+                    let age = <p style="display: inline; color: rgb(167, 18, 18);">30</p> ; <br>
+                    console.log(typeof name); <p style="display: inline; color: rgb(150, 150, 150);">// Imprime el tipo de dato "Number"</p>
+                </code><br><br>
+                
+
+
+
+                </div>
+               
+            </section>
+
+
+
+            <section id="Java" class="main-section">
+                <header><h1>Java</h1></header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, odio accusantium. Obcaecati possimus expedita praesentium quibusdam placeat dolorem alias, culpa iure quod eveniet. Possimus impedit similique, numquam voluptatibus vero error.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda placeat modi obcaecati rem ab iste hic maxime! Assumenda exercitationem minima atque! Magni ut commodi ipsam fugiat numquam, neque quasi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam tenetur laboriosam odio esse dolorem voluptate illum consequuntur illo sequi eius possimus ducimus atque, incidunt harum voluptatum deleniti aperiam cupiditate!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
+                <p>lorem</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur maxime nam error eos officiis, ab id incidunt veritatis modi accusamus reprehenderit cupiditate accusantium ex minima suscipit laboriosam et officia.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente commodi nostrum pariatur corporis natus labore est ipsum incidunt quia voluptates temporibus doloremque, at repudiandae nemo modi adipisci rem illum!</li>
+                </ul>
+                
+
+                
+            </section>
+
+
+
+            <section id="Python" class="main-section">
+                <header><h1>Python</h1></header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, odio accusantium. Obcaecati possimus expedita praesentium quibusdam placeat dolorem alias, culpa iure quod eveniet. Possimus impedit similique, numquam voluptatibus vero error.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda placeat modi obcaecati rem ab iste hic maxime! Assumenda exercitationem minima atque! Magni ut commodi ipsam fugiat numquam, neque quasi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam tenetur laboriosam odio esse dolorem voluptate illum consequuntur illo sequi eius possimus ducimus atque, incidunt harum voluptatum deleniti aperiam cupiditate!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
+                <p>lorem</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur maxime nam error eos officiis, ab id incidunt veritatis modi accusamus reprehenderit cupiditate accusantium ex minima suscipit laboriosam et officia.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente commodi nostrum pariatur corporis natus labore est ipsum incidunt quia voluptates temporibus doloremque, at repudiandae nemo modi adipisci rem illum!</li>
+                </ul>
+
+                <code></code>
+                <code></code>
+            </section>
+
+
+
+
+            <section id="Frameworks" class="main-section">
+                <header><h1>Frameworks</h1></header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, odio accusantium. Obcaecati possimus expedita praesentium quibusdam placeat dolorem alias, culpa iure quod eveniet. Possimus impedit similique, numquam voluptatibus vero error.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda placeat modi obcaecati rem ab iste hic maxime! Assumenda exercitationem minima atque! Magni ut commodi ipsam fugiat numquam, neque quasi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam tenetur laboriosam odio esse dolorem voluptate illum consequuntur illo sequi eius possimus ducimus atque, incidunt harum voluptatum deleniti aperiam cupiditate!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
+                <p>lorem</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur maxime nam error eos officiis, ab id incidunt veritatis modi accusamus reprehenderit cupiditate accusantium ex minima suscipit laboriosam et officia.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente commodi nostrum pariatur corporis natus labore est ipsum incidunt quia voluptates temporibus doloremque, at repudiandae nemo modi adipisci rem illum!</li>
+                </ul>
+
+                
+                <code></code>
+                <code></code>
+                
+            </section>
+
+
+        </main>
+    
+    </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+        const maindoc = document.getElementById('main-doc');
+        
+
+        document.onclick = function(e){
+            if(e.target.id !== 'navbar' && e.target.id !== 'toggle' )
+            {
+               toggle.classList.remove('active');
+                navbar.classList.remove('active'); 
+                
+            }
+        }
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+            maindoc.classList.toggle('active');
+            
+        }
+
+       
+
+    </script>
+
+
+
+</body>
+</html>
