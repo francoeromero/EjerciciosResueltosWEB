@@ -30,9 +30,9 @@
                 <h1 class="title">Javascript</h1>
             <div id="links">
                 <a href="#introduccion"  class="nav-link-intro">Introducción</a><br>
-                <a  href="#already" class="nav-link">Tipos de datos primitivos</a><br>
-                <a  href="#java" class="nav-link">Sentencia de asignación</a><br>
-                <a  href="#hello" class="nav-link">Tipos de datos estructurados</a><br>
+                <a  href="#primitivos" class="nav-link">Tipos de datos primitivos</a><br>
+                <a  href="#sentencias" class="nav-link">Sentencia de asignación</a><br>
+                <a  href="#estructura" class="nav-link">Tipos de datos estructurados</a><br>
                 <a  href="#variables" class="nav-link">Estructuras</a><br>
                 <a  href="#declaring" class="nav-link">Mapas</a><br>
                 <a  href="#scope" class="nav-link">Listas de tamaño fijo (arrays)</a><br>
@@ -117,7 +117,9 @@
                 <code>
                     <p style="display: inline; color: rgb(124, 124, 255);">const</p> PI = 3.14; <br>
                     console.log(PI); <p style="display: inline; color: rgb(150, 150, 150);">// son valores que nunca cambian y que se las puede llamar pero no reasignarlas </p>
-                </code>
+                </code><br><br>
+
+                
 
                 </div>
 
@@ -127,10 +129,9 @@
 
             <section id="primitivos" class="main-section">
                 <header><h1>Tipos de datos primitivos</h1></header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, odio accusantium. Obcaecati possimus expedita praesentium quibusdam placeat dolorem alias, culpa iure quod eveniet. Possimus impedit similique, numquam voluptatibus vero error.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda placeat modi obcaecati rem ab iste hic maxime! Assumenda exercitationem minima atque! Magni ut commodi ipsam fugiat numquam, neque quasi!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam tenetur laboriosam odio esse dolorem voluptate illum consequuntur illo sequi eius possimus ducimus atque, incidunt harum voluptatum deleniti aperiam cupiditate!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
+                <p>Los tipos de datos primitivos en un lenguaje de programación son aquellos que representan valores básicos y no están compuestos por otros valores. Estos valores son los más básicos y simples que se pueden representar en un lenguaje de programación y no requieren una construcción adicional.</p>
+                <p>Los tipos de datos primitivos incluyen tipos como string (cadena de caracteres), number (número), boolean (valor lógico), null y undefined (representando la ausencia de un valor). Algunos lenguajes de programación también incluyen otros tipos primitivos como symbol o char (carácter).</p>
+                <p>Es importante tener en cuenta que los tipos de datos primitivos suelen ser más rápidos y eficientes que los tipos de datos compuestos, ya que no requieren una construcción adicional para representar su valor. Sin embargo, también son más limitados en términos de funcionalidad y flexibilidad en comparación con los tipos de datos compuestos.</p><br>
                 <p>JavaScript tiene seis tipos de datos primitivos:</p>
                 <ul>
                     <li><b>String:</b>  Una secuencia de caracteres, por ejemplo: "Hola mundo".</li><br>
@@ -154,47 +155,171 @@
                     let age = <p style="display: inline; color: rgb(167, 18, 18);">30</p> ; <br>
                     console.log(typeof name); <p style="display: inline; color: rgb(150, 150, 150);">// Imprime el tipo de dato "Number"</p>
                 </code><br><br>
+
+                <code>
+                    <p style="display: inline; color: rgb(150, 150, 150);">// Boolean</p><br>
+                    let isStudent = <p style="display: inline; color: rgb(167, 18, 18);">false</p> ; <br>
+                    console.log(typeof isStudent); <p style="display: inline; color: rgb(150, 150, 150);">// Imprime el tipo de dato "False" como tambien puede imprimir "True"</p>
+                </code><br><br>
+
+                <code>
+                    <p style="display: inline; color: rgb(150, 150, 150);">// Undefined</p><br>
+                    let address <p style="display: inline; color: rgb(167, 18, 18);"></p> ; <br>
+                    console.log(typeof address); <p style="display: inline; color: rgb(150, 150, 150);">// Imprime el tipo de dato "False" como tambien puede imprimir "True"</p>
+                </code><br><br>
+
+                <code>
+                    <p style="display: inline; color: rgb(150, 150, 150);">// Null</p><br>
+                    let phoneNumber<p style="display: inline; color: rgb(167, 18, 18);"></p> ; <br>
+                    console.log(typeof phoneNumber); <p style="display: inline; color: rgb(150, 150, 150);">// "object" (Nota: Este es un bug conocido en JavaScript)</p>
+                </code><br><br>
+
+                <code>
+                    <p style="display: inline; color: rgb(150, 150, 150);">// Symbol</p><br>
+                    let uniqueId = Symbol("Unique Identifier")<p style="display: inline; color: rgb(167, 18, 18);"></p> ; <br>
+                    console.log(typeof uniqueId); <p style="display: inline; color: rgb(150, 150, 150);">// "symbol"</p>
+                </code><br><br>
                 
-
-
-
                 </div>
                
             </section>
 
 
 
-            <section id="Java" class="main-section">
-                <header><h1>Java</h1></header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, odio accusantium. Obcaecati possimus expedita praesentium quibusdam placeat dolorem alias, culpa iure quod eveniet. Possimus impedit similique, numquam voluptatibus vero error.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda placeat modi obcaecati rem ab iste hic maxime! Assumenda exercitationem minima atque! Magni ut commodi ipsam fugiat numquam, neque quasi!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam tenetur laboriosam odio esse dolorem voluptate illum consequuntur illo sequi eius possimus ducimus atque, incidunt harum voluptatum deleniti aperiam cupiditate!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
-                <p>lorem</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur maxime nam error eos officiis, ab id incidunt veritatis modi accusamus reprehenderit cupiditate accusantium ex minima suscipit laboriosam et officia.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente commodi nostrum pariatur corporis natus labore est ipsum incidunt quia voluptates temporibus doloremque, at repudiandae nemo modi adipisci rem illum!</li>
-                </ul>
-                
+            <section id="sentencia" class="main-section">
+                <header><h1>Sentencia de asignación</h1></header>
+                <p>En JavaScript, las sentencias de asignación se utilizan para asignar un valor a una variable. Hay tres maneras principales de hacer esto en JavaScript:</p><br>
+                <p>Asignación simple:</p>
+                <div class="codigo">
+                    <code>
+                        let name <p style="display: inline; color: rgb(237, 53, 53);">=</p></code>"John Doe"; <br>
+                        //Se esta asignando el valor "John Doe" a la variable 'name'
+                    </code>
+                </div>
+                <p>Asignación de adición:</p>
+                <div class="codigo">
+                    <code>
+                        let num <p style="display: inline; color: rgb(237, 53, 53);">=</p></code>10; <br>
+                        num <p style="display: inline; color: rgb(237, 53, 53);">+=</p></code>5; <br>
+                        // se está añadiendo 5 a la variable num, y el resultado es (15). Esto es equivalente a escribir: <br> let num = 10; <br> 'num = num + 5;'
+                    </code>
+                </div>
+                <p>Asignación de concatenación:</p>
+                <div class="codigo">
+                    <code>
+                        let firstName <p style="display: inline; color: rgb(237, 53, 53);">=</p></code> "Fran"; <br>
+                        let lastName <p style="display: inline; color: rgb(237, 53, 53);">=</p></code> "Romero"; <br>
+                        let fullName <p style="display: inline; color: rgb(237, 53, 53);">=</p></code> firstName  <p style="display: inline; color: rgb(237, 53, 53);">+</p> " "<p style="display: inline; color: rgb(237, 53, 53);">+</p>  lastName; <br><br>
+                        //se está concatenando los valores de las variables firstName y lastName con un espacio en blanco y asignando el resultado a la variable fullName.
+                    </code>
+                </div>
 
-                
+                <p>Estas son las tres formas principales de hacer asignaciones en JavaScript, pero también existen otras formas:</p>
+
+                <ul class="cuadroAsignaciones"  style="width: 40%; display: block; margin-left: auto; margin-right: auto;">
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #cecece; ">
+                        <p style="width: 200px; margin-left: -50px;"> Asignación simple:</p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #e1e1e1;">
+                       <p  style="width: 200px; margin-left: -50px;">Asignación de adición:</p> 
+                        <b>variable
+                            <b style="color: rgb(153, 15, 15);">+=</b>
+                             value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #cecece;">
+                        <p  style="width: 200px; margin-left: -50px;"> Asignación de sustracción:</p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">-=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #e1e1e1;">
+                        <p  style="width: 200px; margin-left: -50px;"> Asignación de multiplicación: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">*=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #cecece;">
+                        <p  style="width: 200px; margin-left: -50px;">Asignación de división: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">/=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #e1e1e1;">
+                        <p  style="width: 200px; margin-left: -50px;"> Asignación de módulo: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">%=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #cecece;">
+                        <p  style="width: 200px; margin-left: -50px;">Asignación de exponenciación:</p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">**=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #e1e1e1;">
+                        <p  style="width: 200px; margin-left: -50px;"> Asignación de concatenación de strings: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">+=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #cecece;">
+                        <p  style="width: 200px; margin-left: -50px;">Asignación de desplazamiento a la izquierda:</p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);"><<=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #e1e1e1;">
+                        <p  style="width: 200px; margin-left: -50px;"> Asignación de desplazamiento a la derecha: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);"> >>=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #cecece;">
+                        <p  style="width: 200px; margin-left: -50px;">Asignación de desplazamiento a la derecha sin signo: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">>>>=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #e1e1e1;">
+                        <p  style="width: 200px; margin-left: -50px;">Asignación bit a bit OR: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);"> |=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #cecece;">
+                        <p  style="width: 200px; margin-left: -50px;">Asignación bit a bit XOR: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);">^=</b> value;</b>
+                    </li>
+
+                    <li style="display: flex; flex-direction: row; justify-content: space-around; align-items: center; background: #e1e1e1;">
+                        <p  style="width: 200px; margin-left: -50px;">Asignación bit a bit AND: </p> 
+                        <b>variable <b style="color: rgb(153, 15, 15);"> &=</b> value;</b>
+                    </li>
+
+                </ul>
             </section>
 
-
-
             <section id="Python" class="main-section">
-                <header><h1>Python</h1></header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, odio accusantium. Obcaecati possimus expedita praesentium quibusdam placeat dolorem alias, culpa iure quod eveniet. Possimus impedit similique, numquam voluptatibus vero error.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda placeat modi obcaecati rem ab iste hic maxime! Assumenda exercitationem minima atque! Magni ut commodi ipsam fugiat numquam, neque quasi!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam tenetur laboriosam odio esse dolorem voluptate illum consequuntur illo sequi eius possimus ducimus atque, incidunt harum voluptatum deleniti aperiam cupiditate!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
-                <p>lorem</p>
+                <header><h1>Tipos de datos estructurados</h1></header>
+                <p>Los tipos de datos estructurados son aquellos que permiten agrupar y organizar múltiples valores de diferentes tipos en una sola estructura de datos. Los tipos de datos estructurados son esenciales para trabajar con datos complejos y estructurados en un lenguaje de programación.</p>
+                <p>Hay diferentes tipos de datos estructurados en diferentes lenguajes de programación, pero algunos de los más comunes incluyen:</p>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur maxime nam error eos officiis, ab id incidunt veritatis modi accusamus reprehenderit cupiditate accusantium ex minima suscipit laboriosam et officia.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente commodi nostrum pariatur corporis natus labore est ipsum incidunt quia voluptates temporibus doloremque, at repudiandae nemo modi adipisci rem illum!</li>
+                    <li><b>Arrays:</b>  Una lista ordenada de valores, accesible a través de un índice.</li>
+                    <li><b>Listas ligadas:</b>  Una lista enlazada de nodos, cada uno de los cuales contiene un valor y una referencia a otro nodo.</li>
+                    <li><b>Diccionarios:</b>  Una estructura de datos que asocia claves con valores.</li>
+                    <li><b>Árboles:</b>  Una estructura de datos en forma de árbol, donde cada nodo puede tener múltiples hijos.</li>
+                    <li><b>Conjuntos:</b>  Una colección de valores sin duplicados.</li>
+                    <li><b>Matrices:</b>  Una estructura de datos bidimensional que permite acceder a sus valores mediante dos índices.</li>
                 </ul>
 
-                <code></code>
+                <p>Estos son algunos de los tipos de datos estructurados más comunes en la programación. La elección del tipo de datos estructurado adecuado dependerá de la naturaleza de los datos y de la tarea a realizar.</p>
+                <p>En JavaScript, existen dos tipos de datos estructurados:</p>
+                <p><b>Arrays:</b>  Un array es una colección ordenada de valores, que se pueden acceder mediante un índice numérico. Se pueden almacenar valores de cualquier tipo, incluidos otros arrays y objetos. Los arrays se pueden crear utilizando la notación de corchetes [].</p>
+
+                <div class="codigo">
+                     <code>let colors = <b style="color: red;"> ["red", "green", "blue"]</b>;</code>
+                </div>
+
+                <p><b>Objetos: </b>Un objeto es una colección de pares clave-valor, donde cada clave es una cadena y su valor puede ser cualquier tipo de datos. Los objetos se pueden crear utilizando la notación de llaves {}. </p>
+                <div class="codigo">
+                    <code>let person = <b style="color: red;"> { <br> name : <b style="color: blue;">"Fran"</b> , <br> age : <b style="color: blue;">30</b> , <br>occupation: <b style="color: blue;">"Programmer"</b>  <br> };</b></code>
+               </div>
+                
+
+               
                 <code></code>
             </section>
 
