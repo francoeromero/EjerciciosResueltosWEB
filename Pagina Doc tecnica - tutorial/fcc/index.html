@@ -30,12 +30,12 @@
                 <h1 class="title">Javascript</h1>
             <div id="links">
                 <a href="#introduccion"  class="nav-link-intro">Introducción</a><br>
-                <a  href="#primitivos" class="nav-link">Tipos de datos primitivos</a><br>
+                <a  href="#datosprimitivos" class="nav-link">Tipos de datos primitivos</a><br>
                 <a  href="#sentencias" class="nav-link">Sentencia de asignación</a><br>
-                <a  href="#estructura" class="nav-link">Tipos de datos estructurados</a><br>
-                <a  href="#variables" class="nav-link">Estructuras</a><br>
-                <a  href="#declaring" class="nav-link">Mapas</a><br>
-                <a  href="#scope" class="nav-link">Listas de tamaño fijo (arrays)</a><br>
+                <a  href="#datosestructurados" class="nav-link">Tipos de datos estructurados</a><br>
+                <a  href="#estructuras" class="nav-link">Estructuras</a><br>
+                <a  href="#mapas" class="nav-link">Mapas</a><br>
+                <a  href="#tamañoFijo" class="nav-link">Listas de tamaño fijo (arrays)</a><br>
                 <a  href="#global" class="nav-link">Listas de tamaño variable</a><br>
                 <a  href="#constants" class="nav-link">Operadores</a><br>
                 <a  href="#data" class="nav-link">Funciones</a><br>
@@ -317,13 +317,173 @@
                 <div class="codigo">
                     <code>let person = <b style="color: red;"> { <br> name : <b style="color: blue;">"Fran"</b> , <br> age : <b style="color: blue;">30</b> , <br>occupation: <b style="color: blue;">"Programmer"</b>  <br> };</b></code>
                </div>
-                
+               <p>Estos son los dos tipos de datos estructurados más comúnmente usados en JavaScript, pero también existen otras estructuras de datos más avanzadas, como Map y Set.</p>
+            </section>
 
-               
-                <code></code>
+            <section id="estructuras" class="main-section">
+                <header><h1>Estructuras</h1></header>
+                <p>La estructura en un lenguaje de programación es a la forma en que los componentes del programa, como las variables, funciones, estructuras de control de flujo, etc., están organizados y relacionados entre sí. La estructura es esencial para asegurar la claridad, la mantenibilidad y la eficiencia del código. Diferentes lenguajes de programación pueden tener diferentes estructuras, pero todos siguen ciertos patrones y convenciones básicas que ayudan a los programadores a escribir código de manera consistente y legible.</p>
+
+                <p>En JavaScript, la estructura básica de un programa incluye:</p>
+                <ol>
+                    <li><b>Variables: </b>que se utilizan para almacenar valores y datos.</li><br>
+                    <li><b>Funciones: </b>que son bloques de código reutilizables que se pueden invocar en cualquier momento.</li><br>
+                    <li><b>Control de flujo: </b> que permite a los programadores tomar decisiones basadas en ciertas condiciones y ejecutar diferentes acciones en consecuencia.</li><br>
+                    <li><b>Bucles: </b>que permiten repetir un bloque de código un número determinado de veces o mientras se cumpla una cierta condición.</li><br>
+                    <li><b>Objetos: </b>que representan entidades reales o abstractas y almacenan datos y funciones relacionados.</li>
+                </ol>
+                <div class="codigo">
+                    <code>
+                        <p>
+                            //Ejemplos <br> <br>
+                        
+                        <b>//1 - Variables ejemplo:</b>  <br><br>
+                            var name = "John Doe"; <br>
+                            let age = 30; <br>
+                            const PI = 3.14; <br>
+                        </p>
+                    </code>
+                </div>
+
+                <div class="codigo">
+                    <code>
+                        <p>
+                            <b>//2 - Funciones ejemplo: </b><br><br>
+                            function greet(name) {<br>
+                                console.log("Hello " + name); <br>
+                            } <br>
+                            greet("John Doe"); // imprime "Hello John Doe"
+                        </p>
+                    </code>
+                </div>
+
+                <div class="codigo">
+                    <code>
+                        <p>
+                            <b> //3 - Control de flujo ejemplo:</b> <br><br>
+                            let age = 30;<br> <br>
+                            if (age >= 18) { <br>
+                            console.log("You are an adult"); <br>
+                            } <br>
+                            else { <br>
+                            console.log("You are a minor"); <br>
+                            } <br>
+                        </p>
+                    </code>
+                </div>
+
+                <div class="codigo">
+                    <code>
+                        <p>
+                            <b>//4 - Bucles ejemplo: </b><br><br>
+                          
+                            for (let i = 0; i < 5; i++) {<br>
+                                console.log(i); <br>
+                            } <br>
+                            // 0 <br>
+                            // 1 <br>
+                            // 2 <br>
+                            // 3 <br>
+                            // 4 <br>
+                            //Tambien esta 'While' para bucles
+                        </p>
+                    </code>
+                </div>
+
+                <div class="codigo">
+                    <code>
+                        <p>
+                            <b>  //5 - Objetos ejemplo:</b> <br><br>
+                          
+                            let person = {<br>
+                                name: "John Doe",<br>
+                                age: 30,<br>
+                                greet: function() { <br>
+                                    console.log("Hello " + this.name);<br>
+                                } <br>
+                            };<br>
+                            
+                        </p>
+                    </code>
+                </div>
+ 
             </section>
 
 
+            <section id="mapas" class="main-section">
+                <header><h1>Mapas</h1></header>
+                <p>En programación, un mapa es una estructura de datos que asocia claves (keys) con valores (values). Los mapas son útiles para almacenar y acceder a datos asociativos, es decir, en los que los valores están asociados a nombres o etiquetas específicas.</p>
+                <p>La mayoría de los lenguajes de programación modernos tienen algún tipo de implementación de mapas, también conocidos como diccionarios, tablas hash, etc. En JavaScript, los mapas se pueden crear usando el objeto 'Map'</p>
+                <p>Caracteristicas importantes de un mapa en JavaScript</p>
+                <ul>
+                    <li><b>Claves y valores:</b>Los mapas asocian claves con valores, lo que los hace útiles para almacenar y acceder a datos asociativos. Las claves y los valores pueden ser de cualquier tipo, incluyendo números, cadenas, objetos, etc.</li> <br>
+                    <li><b>Orden de inserción:</b>Los mapas en JavaScript mantienen el orden de inserción de las claves-valor. Esto significa que el primer elemento insertado en el mapa será el primer elemento devuelto por un iterador.</li> <br>
+                    <li><b>Acceso a través de claves: </b>Los valores se pueden acceder rápidamente a través de las claves en un mapa, en lugar de tener que buscar a través de una lista como se haría con un array.</li> <br>
+                    <li><b>Tamaño dinámico: </b>Los mapas en JavaScript tienen un tamaño dinámico, lo que significa que se pueden agregar o eliminar elementos en tiempo de ejecución.</li> <br>
+                    <li><b>Claves únicas: </b> Las claves en un mapa deben ser únicas, lo que significa que no puede haber dos claves iguales en un mismo mapa.</li> <br>
+                    <li><b>Métodos integrados:</b>Los mapas en JavaScript tienen varios métodos integrados para manipular los datos, como set() para agregar claves-valor, get() para obtener el valor de una clave, delete() para eliminar una clave-valor, etc.</li> <br>
+                    
+                </ul>
+
+                <div class="codigo">
+                   <code>
+                    // Crea una nueva instancia del objeto Map <br>
+                    let map = <b style="color: red;">new Map();</b>  <br> <br>
+                    // Agrega una clave-valor al mapa <br>
+                    map<b style="color: red;">.set</b> ("name", "John Doe"); <br> <br>
+                    // Agrega otra clave-valor al mapa <br>
+                    map<b style="color: red;">.set</b> ("age", 30); <br><br>
+                    // Imprime el valor asociado a la clave "name" <br>
+                    console.log(map<b style="color: red;">.set</b> ("name")); // imprime "John Doe" <br>
+
+
+                   </code>
+                
+                </div>
+                
+                
+            </section>
+
+
+            <section id="tamañoFijo" class="main-section">
+                <header><h1>Listas de tamaño fijo (arrays)</h1></header>
+                <p>En la mayoría de los lenguajes de programación, una lista de tamaño fijo es un arreglo o una matriz que tiene un tamaño predefinido y no puede ser redimensionado dinámicamente. Esto significa que una vez que se define el tamaño de la lista, su tamaño no se puede cambiar.</p>
+               <p>Alguna de las caracteristicas importantes</p>
+                <ul>
+                    <li><b>Tamaño predefinido:</b> El tamaño de la lista está predefinido y no puede ser redimensionado dinámicamente.</li><br>
+                    <li><b>Memoria estática:</b>  Las listas de tamaño fijo se alojan en la memoria estática, lo que significa que su tamaño se asigna al inicio del programa y no cambia durante su ejecución.</li><br>
+                    <li><b>Acceso rápido a elementos: </b> Debido a su tamaño fijo, las listas de tamaño fijo permiten un acceso rápido a cualquier elemento a través de un índice.</li><br>
+                    <li><b>Tamaño predefinido:</b> El tamaño de la lista está predefinido y no puede ser redimensionado dinámicamente.</li><br>
+                    <li><b>Tamaño predefinido:</b> El tamaño de la lista está predefinido y no puede ser redimensionado dinámicamente.</li><br>
+                    <li><b>Tamaño predefinido:</b> El tamaño de la lista está predefinido y no puede ser redimensionado dinámicamente.</li><br>
+                    <li><b>Tamaño predefinido:</b> El tamaño de la lista está predefinido y no puede ser redimensionado dinámicamente.</li><br>
+                    
+                </ul>
+
+                
+                <code></code>
+                <code></code>
+                
+            </section>
+
+
+            <section id="Frameworks" class="main-section">
+                <header><h1>Frameworks</h1></header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, odio accusantium. Obcaecati possimus expedita praesentium quibusdam placeat dolorem alias, culpa iure quod eveniet. Possimus impedit similique, numquam voluptatibus vero error.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda placeat modi obcaecati rem ab iste hic maxime! Assumenda exercitationem minima atque! Magni ut commodi ipsam fugiat numquam, neque quasi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam tenetur laboriosam odio esse dolorem voluptate illum consequuntur illo sequi eius possimus ducimus atque, incidunt harum voluptatum deleniti aperiam cupiditate!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error tempore fugit quos unde inventore adipisci consectetur. Dicta iure quisquam nobis! Voluptates sapiente aliquid porro minus architecto ipsum officia est.</p>
+                <p>lorem</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur maxime nam error eos officiis, ab id incidunt veritatis modi accusamus reprehenderit cupiditate accusantium ex minima suscipit laboriosam et officia.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente commodi nostrum pariatur corporis natus labore est ipsum incidunt quia voluptates temporibus doloremque, at repudiandae nemo modi adipisci rem illum!</li>
+                </ul>
+
+                
+                <code></code>
+                <code></code>
+                
+            </section>
 
 
             <section id="Frameworks" class="main-section">
